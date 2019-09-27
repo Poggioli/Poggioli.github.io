@@ -1,7 +1,7 @@
 body,
 body div.main-body {
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
 }
 
 body div.main-body {
@@ -9,5 +9,14 @@ body div.main-body {
 }
 
 .main-body .jumbotron {
+    box-shadow: #212529 0px 5px 10px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#footer>div {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
     max-width: 600px;
 }
