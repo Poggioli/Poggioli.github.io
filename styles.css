@@ -7,3 +7,7 @@ body div.main-body {
 body div.main-body {
     padding: 30px;
 }
+
+.main-body .jumbotron {
+    max-width: 600px;
+}
