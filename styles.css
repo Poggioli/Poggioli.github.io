@@ -1,6 +1,5 @@
 body,
 body div.main-body {
-    height: 100vh;
     width: 100vw;
 }
 
@@ -8,13 +7,64 @@ body div.main-body {
     padding: 30px;
 }
 
-.main-body .jumbotron,
-nav>div {
+.main-body .jumbotron {
     margin: 0 auto;
     max-width: 600px;
     width: 100%;
 }
 
-.main-body .jumbotron {
-    box-shadow: #bdbdbd 0px 5px 10px;
+/* conteudo principal */
+
+/* Navbar top */
+section>nav {
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+    #navigation .navbar-brand #brand-text {
+        display: none;
+    }
+}
+
+/* Seção principal */
+section#content {
+    padding: 6em 2em 2em;
+    width: 100vw;
+}
+
+#img-profile {
+    margin-bottom: 2em;
+    max-width: 300px;
+    width: 70%;
+}
+
+.shadow {
+    box-shadow: #bdbdbd 0 5px 10px;
+}
+
+.img-round {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 500px) {
+    #img-profile {
+        float: left;
+        margin-left: 0 !important;
+        margin-right: 2em !important;
+        width: 50%;
+    }
+
+    /* #description {
+        font-size: 1.2em;
+    } */
+}
+
+i+span {
+    margin-left: 1em;
+}
+
+/* Navbar footer */
+#footer .nav-item {
+    width: 100%;
 }
