@@ -21,52 +21,52 @@
 <body>
 
     <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#content">
-            <i class="fas fa-home"></i>
-            <span id="brand-text">João Pogiolli</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#content">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#content">Sobre mim</a>
-                </li>
-                <li class="nav-item">
+        <div>
+            <a class="navbar-brand" href="#content">
+                <i class="fas fa-home"></i>
+                <span id="brand-text">João Pogiolli</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#description">Sobre mim</a>
+                    </li>
+                    <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contato</a>
-                </li>
-            </ul>
+                </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <section id="content">
-        <img id="img-profile" src="./assets/profile-pic.jpg" class="img-fluid img-round mx-auto d-block shadow"
-            alt="Imagem de perfil">
-
-        <p id="description" class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacus
-            augue, fermentum
-            at ultricies ut, euismod sit amet nunc. Sed egestas gravida eleifend. Nullam turpis orci, dictum quis
-            facilisis a, malesuada id tortor. Integer quis eros urna. Nunc sit amet condimentum ante. Ut dapibus arcu eu
-            odio hendrerit convallis. Duis quis convallis augue. Nullam felis nunc, ullamcorper quis nibh vel, vulputate
-            porta dolor. Nulla quis lorem ac nisl tempor faucibus. Nulla placerat ipsum vel neque varius finibus.
-            Quisque finibus tempor nulla sed laoreet. Sed quam nisi, malesuada sit amet libero eget, convallis efficitur
-            ipsum. Aenean mattis eros non enim rutrum dictum. Morbi vulputate egestas ullamcorper.
-
-            Curabitur vestibulum ac nisl et eleifend. Cras est magna, suscipit pellentesque imperdiet sed, vulputate nec
-            sem. Etiam euismod nulla lectus, sed tempor tortor imperdiet sed. Phasellus in dapibus nisi. Fusce iaculis
-            nunc ornare dictum aliquet. Nunc quis massa tincidunt justo pretium fermentum. Mauris congue tincidunt eros,
-            non commodo purus consectetur a. Integer vitae sem tellus. Fusce eleifend cursus pretium. Morbi ultrices
-            mauris vitae accumsan pharetra. Vivamus accumsan arcu ut placerat tincidunt. Suspendisse ut ipsum vel nulla
-            efficitur consectetur id et elit. Nunc rhoncus lorem felis, at dignissim mauris luctus laoreet. Morbi at
-            finibus turpis. Praesent.</p>
+        <div id="profile" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <img id="img-profile" src="./assets/profile-pic.jpg" class="img-fluid img-round mx-auto d-block shadow"
+                alt="Imagem de perfil">
+            <div id="description" class="text-justify">
+                <p>Olá, eu sou <strong>João Vitor Pogiolli do Lago</strong>, estudante
+                    de Análise e
+                    Desenvolvimento de Sistemas na UNICAMP - Universidade Estadual de Campinas, estudante da área da
+                    tecnologia
+                    desde 2013, onde iniciei um curso de informática na escola SENAI.</p>
+                <p>Hoje atuo como desenvolvedor frontend na <a href="www.ciandt.com">CI&T</a> desde 2017, prestando
+                    serviço
+                    para uma grande
+                    empresa do setor bancário. Parte focado em telas, layout responsivo, experiencia do usuário e
+                    acessibilidade tanto desktop quanto mobile, conhecimentos em Angular, Typescript, REST, Javascript,
+                    RXjs, SASS, CSS3, HTML5, Node.js, Joomla.</p>
+            </div>
+        </div>
     </section>
     <section id="footer">
         <nav class="navbar navbar-dark bg-dark justify-content-center">
@@ -83,7 +83,7 @@
                     <a href="tel:+5519983264895">
                         <span class="navbar-text">
                             <i class="fas fa-mobile-alt"></i>
-                            <span>+55 19 98326-4895</span>
+                            <span>19 98326-4895</span>
                         </span>
                     </a>
                 </li>

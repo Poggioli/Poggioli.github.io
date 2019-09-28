@@ -19,39 +19,79 @@
 </head>
 
 <body>
-    <div class="main-body">
-        <div class="jumbotron shadow">
-            <h1 class="display-4">Olá!</h1>
-            <p class="lead">Nós ainda estamos em construção, volte em breve :)</p>
-            <hr class="my-4">
-            <p>Aqui você irá encontrar meus projetos e um pouco mais sobre mim.</p>
-        </div>
-    </div>
 
-    <section id="footer">
-        <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-center">
-            <div>
-                <ul class="nav nav-pills nav-fill">
+    <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div>
+            <a class="navbar-brand" href="#content">
+                <i class="fas fa-home"></i>
+                <span id="brand-text">João Pogiolli</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="mailto:joaopogiolli@gmail.com">
-                            <span class="navbar-text">
-                                <i class="fas fa-envelope"></i>
-                                joaopogiolli@gmail.com
-                            </span>
-                        </a>
+                        <a class="nav-link" href="#content">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a href="tel:+5519983264895">
-                            <span class="navbar-text">
-                                <i class="fas fa-mobile-alt"></i>
-                                +55 19 98326-4895
-                            </span>
-                        </a>
+                        <a class="nav-link" href="#description">Sobre mim</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Projetos</a>
+                </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contato</a>
                     </li>
                 </ul>
             </div>
+        </div>
+    </nav>
+
+    <section id="content">
+        <div id="profile" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <img id="img-profile" src="./assets/profile-pic.jpg" class="img-fluid img-round mx-auto d-block shadow"
+                alt="Imagem de perfil">
+            <div id="description" class="text-justify">
+                <p>Olá, eu sou <strong>João Vitor Pogiolli do Lago</strong>, estudante
+                    de Análise e
+                    Desenvolvimento de Sistemas na UNICAMP - Universidade Estadual de Campinas, estudante da área da
+                    tecnologia
+                    desde 2013, onde iniciei um curso de informática na escola SENAI.</p>
+                <p>Hoje atuo como desenvolvedor frontend na <a href="www.ciandt.com">CI&T</a> desde 2017, prestando
+                    serviço
+                    para uma grande
+                    empresa do setor bancário. Parte focado em telas, layout responsivo, experiencia do usuário e
+                    acessibilidade tanto desktop quanto mobile, conhecimentos em Angular, Typescript, REST, Javascript,
+                    RXjs, SASS, CSS3, HTML5, Node.js, Joomla.</p>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <nav class="navbar navbar-dark bg-dark justify-content-center">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a href="mailto:joaopogiolli@gmail.com">
+                        <span class="navbar-text">
+                            <i class="fas fa-envelope"></i>
+                            <span>joaopogiolli@gmail.com</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:+5519983264895">
+                        <span class="navbar-text">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>19 98326-4895</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </section>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

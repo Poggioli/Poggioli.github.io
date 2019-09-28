@@ -18,9 +18,12 @@ body div.main-body {
 /* conteudo principal */
 
 /* Navbar top */
-section>nav {
+nav#navigation>div {
+    display: contents;
     margin: 0 auto;
+    max-width: 1300px;
     width: 100%;
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -32,6 +35,8 @@ section>nav {
 /* Seção principal */
 section#content {
     height: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
     min-height: calc(100vh - 6em);
     padding: 6em 2em 2em;
     width: 100vw;
@@ -62,6 +67,18 @@ section#content {
     /* #description {
         font-size: 1.2em;
     } */
+}
+
+@media only screen and (min-width: 600px) {
+    #img-profile {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #img-profile {
+        width: 30%;
+    }
 }
 
 i+span {
