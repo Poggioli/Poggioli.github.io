@@ -15,31 +15,51 @@ body {
     width: 100%;
 }
 
-.title {
+.who-am-i__title {
     font-weight: 900;
     margin-bottom: 16px;
 }
 
-.description-box {
+.who-am-i__description-box {
     background: #FFF;
     border-radius: 8px;
     padding: 16px;
     width: 100%;
 }
 
-.description-box__divider {
+.who-am-i__description-box__divider {
     background: #2B3288;
     height: 2px;
     margin: 16px 0;
     width: 100%;
 }
 
-.description-box__header svg:not(:first-child) {
-    margin-left: 16px;
+.who-am-i__description-box__header svg {
     stroke-width: 3;
 }
 
-.description {
+.who-am-i__contact-icons a:not(:first-child),
+.who-am-i__description-box__header svg:not(:first-child) {
+    margin-left: 16px;
+}
+
+.who-am-i__description {
     font-size: 1.25rem;
     font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.who-am-i__link{
+    font-weight: bold;
+}
+
+.who-am-i__skills-list {
+    list-style: none;
+    padding-left: 16px;
+}
+
+.who-am-i__skills-title,
+.who-am-i__contact-title,
+.who-am-i__skills-item:not(:last-child) {
+    margin-bottom: 8px;
 }
