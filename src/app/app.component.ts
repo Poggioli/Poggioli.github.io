@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
 import { TranslateService } from '@ngx-translate/core'
-import { AVAILABLE_LANGS } from 'src/app/core/translate/languages'
+import { AVAILABLE_LANGS } from '@translate/languages'
 
 @Component({
   selector: 'poggi-root',

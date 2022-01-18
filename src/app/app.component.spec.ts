@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { RouterTestingModule } from '@angular/router/testing'
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
-import { AVAILABLE_LANGS } from 'src/app/core/translate/languages'
+import { AVAILABLE_LANGS } from '@translate/languages'
 import { AppComponent } from './app.component'
 
 describe('AppComponent', () => {
