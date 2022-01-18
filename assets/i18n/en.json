@@ -1,0 +1,18 @@
+{
+  "UNDER_CONSTRUCTION": {
+    "TEXT": {
+      "TITLE": "Hello, we are still under construction...",
+      "SUBTITLE": {
+        "MAIN": "Soon João's website will be ready, but in the meantime, just send a message on",
+        "LINK": "Linkedin"
+      }
+    }
+  },
+  "LANGS": {
+    "TEXT": "Idiom",
+    "AVAILABLES": {
+      "PT_BR": "Portuguese",
+      "EN": "English"
+    }
+  }
+}
