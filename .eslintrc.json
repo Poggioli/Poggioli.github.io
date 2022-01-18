@@ -37,6 +37,8 @@
         }
       }
     ],
+    "no-empty-function": ["error", { "allow": ["constructors"] }],
+    "no-useless-constructor": "off",
     "import/prefer-default-export": "off",
     "comma-spacing": 2,
     "comma-dangle": ["error", "never"],
