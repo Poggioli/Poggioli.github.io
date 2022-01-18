@@ -22,7 +22,7 @@
   "plugins": ["@typescript-eslint", "unused-imports"],
   "rules": {
     "unused-imports/no-unused-imports": "error",
-    "indent": ["error", 4],
+    "indent": ["error", 2],
     "max-len": [2, { "code": 140 }],
     "class-methods-use-this": "off",
     "no-underscore-dangle": "off",

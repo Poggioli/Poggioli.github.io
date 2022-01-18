@@ -12,6 +12,13 @@ module.exports = {
       isolatedModules: true,
     },
   },
+  moduleNameMapper: {
+    '^lodash-es$': 'lodash',
+    '@env/(.*)': '<rootDir>/src/environments/$1',
+    '@components/(.*)': '<rootDir>/src/core/components/$1',
+    '@directives/(.*)': '<rootDir>/src/core/directives/$1',
+    '@translate/(.*)': '<rootDir>/src/core/translate/$1'
+  },
   coverageThreshold: {
     global: {
       statements: 80,

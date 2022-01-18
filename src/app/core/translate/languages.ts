@@ -1,9 +1,9 @@
 export const AVAILABLE_LANGS = [
-    'pt',
-    'en'
+  'pt',
+  'en'
 ]
 
 export const TRANSLATE_KEY_LANGS = {
-    pt: 'PT_BR',
-    en: 'EN'
+  pt: 'PT_BR',
+  en: 'EN'
 }

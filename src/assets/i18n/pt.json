@@ -1,0 +1,18 @@
+{
+  "UNDER_CONSTRUCTION": {
+    "TEXT": {
+      "TITLE": "Olá, ainda estamos em construção...",
+      "SUBTITLE": {
+        "MAIN": "Logo mais o site do João fica pronto, mas enquanto isso só enviar uma mensagem no",
+        "LINK": "Linkedin"
+      }
+    }
+  },
+  "LANGS": {
+    "TEXT": "Idiomas",
+    "AVAILABLES": {
+      "PT_BR": "Português",
+      "EN": "Inglês"
+    }
+  }
+}
