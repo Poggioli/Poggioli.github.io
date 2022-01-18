@@ -1,10 +1,12 @@
 {
   "name": "poggioli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "ngh:build": "ng build --prod --base-href https://Poggioli.github.io/",
+    "ngh:deploy": "ngh --branch=main",
     "watch": "ng build --watch --configuration development",
     "test": "jest --collect-coverage --bail --passWithNoTests --silent",
     "lint": "eslint . --ext .ts",
@@ -24,6 +26,7 @@
     "@angular/router": "~13.0.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "angular-cli-ghpages": "^1.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
