@@ -1,13 +1,13 @@
-import { Component, Inject, OnInit } from '@angular/core'
+import { Component, Inject } from '@angular/core'
 import { FormControl } from '@angular/forms'
-import { TranslateService } from '@ngx-translate/core'
+import { LanguagesService } from '@translate/languages.service'
 
 @Component({
   selector: 'poggi-selector-lang',
   templateUrl: './selector-lang.component.html',
   styleUrls: ['./selector-lang.component.scss']
 })
-export class SelectorLangComponent implements OnInit {
+export class SelectorLangComponent {
   private _langFormControl: FormControl = new FormControl('')
 
   private _translateLangsValues: { translateKey: string, value: string }[] = []
@@ -23,12 +23,11 @@ export class SelectorLangComponent implements OnInit {
   constructor(
     @Inject('LANGS') private _availableLangs: string[],
     @Inject('TRANSLATE_KEY') private _translateLangs: any,
-    private _translateService: TranslateService
-  ) { }
-
-  ngOnInit(): void {
+    private _languagesService: LanguagesService
+  ) {
     this.observeLangValue()
     this.translateStringLang()
+    this._langFormControl.setValue(this._languagesService.getLang())
   }
 
   private translateStringLang(): void {
@@ -37,10 +36,7 @@ export class SelectorLangComponent implements OnInit {
   }
 
   private changeLang(): void {
-    const changeToLang: string = this._langFormControl.value
-    if (this._availableLangs.some((lang: string) => lang === changeToLang)) {
-      this._translateService.setDefaultLang(changeToLang)
-    }
+    this._languagesService.setLang(this._langFormControl.value)
   }
 
   private observeLangValue(): void {

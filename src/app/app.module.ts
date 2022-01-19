@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core'
 import { AVAILABLE_LANGS, TRANSLATE_KEY_LANGS } from 'src/app/core/translate/languages'
 import { SelectorLangModule } from '@components/selector-lang/selector-lang.module'
+import { CookieService } from 'ngx-cookie-service'
 import { AppComponent } from './app.component'
 import { AppRoutingModule } from './app-routing.module'
 
@@ -40,7 +41,8 @@ export function httpTranslateLoader(http: HttpClient): TranslateHttpLoader {
     {
       provide: 'TRANSLATE_KEY',
       useValue: TRANSLATE_KEY_LANGS
-    }
+    },
+    CookieService
   ],
   bootstrap: [AppComponent]
 })

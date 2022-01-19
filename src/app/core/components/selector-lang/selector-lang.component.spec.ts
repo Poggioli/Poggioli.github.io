@@ -2,8 +2,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { ReactiveFormsModule } from '@angular/forms'
 import { MatSelectModule } from '@angular/material/select'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { TranslateModule, TranslateService } from '@ngx-translate/core'
+import { TranslateModule } from '@ngx-translate/core'
 import { AVAILABLE_LANGS, TRANSLATE_KEY_LANGS } from '@translate/languages'
+import { LanguagesService } from '@translate/languages.service'
 import { SelectorLangComponent } from './selector-lang.component'
 
 describe('SelectorLangComponent', () => {
@@ -56,29 +57,19 @@ describe('SelectorLangComponent', () => {
 
   it(`DADO o componente seletor de idioma
       QUANDO ele for renderizado
-      ENTÃO o valor da língua selecionada deve ser ''`, () => {
+      ENTÃO o valor da língua selecionada deve ser 'pt'`, () => {
     expect.assertions(1)
-    expect(component.lang.value).toBe('')
+    expect(component.lang.value).toBe('pt')
   })
 
   it(`DADO o componente seletor de idioma
       QUANDO alterar o valor do seletor com um valor válido
-      ENTÃO deverá chamar o método setDefaultLang do TranslateService`, () => {
-    const translateService: TranslateService = TestBed.inject(TranslateService)
-    jest.spyOn(translateService, 'setDefaultLang')
+      ENTÃO deverá chamar o método setLang do LanguagesService`, () => {
+    const languagesService: LanguagesService = TestBed.inject(LanguagesService)
+    jest.spyOn(languagesService, 'setLang')
     expect.assertions(2)
     component.lang.setValue('en')
-    expect(translateService.setDefaultLang).toHaveBeenCalledTimes(1)
-    expect(translateService.setDefaultLang).toHaveBeenCalledWith('en')
-  })
-
-  it(`DADO o componente seletor de idioma
-      QUANDO alterar o valor do seletor com um valor inválido
-      ENTÃO NÃO deverá chamar o método setDefaultLang do TranslateService`, () => {
-    const translateService: TranslateService = TestBed.inject(TranslateService)
-    jest.spyOn(translateService, 'setDefaultLang')
-    expect.assertions(1)
-    component.lang.setValue('in')
-    expect(translateService.setDefaultLang).toHaveBeenCalledTimes(0)
+    expect(languagesService.setLang).toHaveBeenCalledTimes(1)
+    expect(languagesService.setLang).toHaveBeenCalledWith('en')
   })
 })
