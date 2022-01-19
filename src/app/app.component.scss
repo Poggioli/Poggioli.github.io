@@ -7,4 +7,10 @@
   padding: 32px;
   text-align: center;
   width: 100vw;
+
+  &__selector-lang {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+  }
 }

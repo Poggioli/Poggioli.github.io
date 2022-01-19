@@ -1,7 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { RouterTestingModule } from '@angular/router/testing'
+import { SelectorLangModule } from '@components/selector-lang/selector-lang.module'
 import { TranslateModule, TranslateService } from '@ngx-translate/core'
-import { AVAILABLE_LANGS } from '@translate/languages'
+import { AVAILABLE_LANGS, TRANSLATE_KEY_LANGS } from '@translate/languages'
 import { AppComponent } from './app.component'
 
 describe('AppComponent', () => {
@@ -13,10 +15,24 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        BrowserAnimationsModule,
         RouterTestingModule,
-        TranslateModule.forRoot()
+        TranslateModule.forRoot(),
+        SelectorLangModule
       ],
-      declarations: [AppComponent]
+      declarations: [
+        AppComponent
+      ],
+      providers: [
+        {
+          provide: 'LANGS',
+          useValue: AVAILABLE_LANGS
+        },
+        {
+          provide: 'TRANSLATE_KEY',
+          useValue: TRANSLATE_KEY_LANGS
+        }
+      ]
     }).compileComponents()
   })
 

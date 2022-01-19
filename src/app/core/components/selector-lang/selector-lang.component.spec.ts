@@ -23,11 +23,11 @@ describe('SelectorLangComponent', () => {
       ],
       providers: [
         {
-          provide: 'AVAILABLE_LANGS',
+          provide: 'LANGS',
           useValue: AVAILABLE_LANGS
         },
         {
-          provide: 'TRANSLATE_LANGS',
+          provide: 'TRANSLATE_KEY',
           useValue: TRANSLATE_KEY_LANGS
         }
       ]

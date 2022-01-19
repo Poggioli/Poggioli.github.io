@@ -15,6 +15,7 @@ module.exports = {
   moduleNameMapper: {
     '^lodash-es$': 'lodash',
     '@translate/(.*)': '<rootDir>/src/app/core/translate/$1',
+    '@components/(.*)': '<rootDir>/src/app/core/components/$1',
     '@environments/(.*)': '<rootDir>/src/environments/$1'
   },
   coverageThreshold: {

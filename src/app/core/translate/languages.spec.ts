@@ -1,7 +1,7 @@
 import { AVAILABLE_LANGS, TRANSLATE_KEY_LANGS } from './languages'
 
 describe('Languages', () => {
-  describe('AVAILABLE_LANGS', () => {
+  describe('LANGS', () => {
     it(`DADO o array de línguas disponíveis
         ENTÃO deverá ter o tamanho 1`, () => {
       expect(AVAILABLE_LANGS.length).toBe(2)

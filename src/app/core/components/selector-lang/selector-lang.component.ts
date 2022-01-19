@@ -21,8 +21,8 @@ export class SelectorLangComponent implements OnInit {
   }
 
   constructor(
-    @Inject('AVAILABLE_LANGS') private _availableLangs: string[],
-    @Inject('TRANSLATE_LANGS') private _translateLangs: any,
+    @Inject('LANGS') private _availableLangs: string[],
+    @Inject('TRANSLATE_KEY') private _translateLangs: any,
     private _translateService: TranslateService
   ) { }
 
