@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/react';
-import { brown, oliveA } from '@radix-ui/colors'
+import { brown, sand, oliveA } from '@radix-ui/colors'
 
 const { createTheme } = createStitches({
   media: {
@@ -90,7 +90,12 @@ const { createTheme } = createStitches({
       separators: "$brown6",
       border: "$brown7",
       borderHover: "$brown8",
-    }
+    },
+
+    shadows: {
+      ...sand,
+      1: '$sand7 0 1px 6px 0'
+    },
   }
 })
 

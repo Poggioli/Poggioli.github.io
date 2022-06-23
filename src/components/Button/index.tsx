@@ -25,6 +25,11 @@ const buttonCss = css({
   fontFamily: '$untitled',
   transition: 'all .5s',
 
+  '&:hover': {
+    transform: 'translate3d(0, -1px, 0)',
+    boxShadow: '$1'
+  },
+
   variants: {
     color: {
       primary:{
