@@ -1,5 +1,14 @@
+import globalStyles from "./theme/global-styles"
+
 function App() {
-  return <h1>Hello</h1>;
+
+  globalStyles()
+
+  return (
+    <div className="App">
+      Hello
+    </div>
+  )
 }
 
-export default App;
+export default App
