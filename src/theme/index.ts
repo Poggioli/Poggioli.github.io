@@ -46,37 +46,39 @@ const { createTheme } = createStitches({
       2: '8px',
       3: '16px',
       4: '99999px',
+    },
+    colors: {
+      ...grassA,
+      ...oliveA,
+
+      appBackground: '$grassA1',
+      cardBackground: '$grassA2',
+      sideBackground: '$grassA2',
+
+      subtleNormalBackground: '$grassA3',
+      subtleHoverBackground: '$grassA4',
+      subtlePressedBackground: '$grassA5',
+
+      solidNormalBackground: '$grassA9',
+      solidHoverBackground: '$grassA10',
+      solidPressedBackground: '$grassA10',
+
+      greyTextLowContrast: '$oliveA11',
+      greyTextHighContrast: '$oliveA12',
+
+      white: "#FFF",
+
+      colorTextLowContrast: '$grassA11',
+      colorTextHighContrast: '$grassA12',
+
+      separators: "$grassA6",
+      border: "$grassA7",
+      borderHover: "$grassA8",
     }
   }
 })
 
-const lightTheme = createTheme({
-  colors: {
-    ...grassA,
-    ...oliveA,
+const lightTheme = createTheme({})
 
-    appBackground: '$grassA1',
-    cardBackground: '$grassA2',
-    sideBackground: '$grassA2',
 
-    subtleNormalBackground: '$grassA3',
-    subtleHoverBackground: '$grassA4',
-    subtlePressedBackground: '$grassA5',
-
-    solidNormalBackground: '$grassA9',
-    solidHoverBackground: '$grassA10',
-    solidPressedBackground: '$grassA10',
-
-    greyTextLowContrast: '$oliveA11',
-    greyTextHighContrast: '$oliveA12',
-
-    white: "#FFF",
-
-    colorTextLowContrast: '$grassA11',
-    colorTextHighContrast: '$grassA12',
-
-    separators: "$grassA6",
-    border: "$grassA7",
-    borderHover: "$grassA8",
-  }
-})
+export { lightTheme }
