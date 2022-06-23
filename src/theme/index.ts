@@ -1,5 +1,5 @@
 import { createStitches } from '@stitches/react';
-import { grassA, oliveA } from '@radix-ui/colors'
+import { brown, oliveA } from '@radix-ui/colors'
 
 const { createTheme } = createStitches({
   media: {
@@ -11,6 +11,16 @@ const { createTheme } = createStitches({
   },
   theme: {
     space: {
+      1: '2px',
+      2: '4px',
+      3: '8px',
+      4: '16px',
+      5: '32px',
+      6: '48px',
+      7: '64px',
+      8: '128px'
+    },
+    sizes: {
       1: '2px',
       2: '4px',
       3: '8px',
@@ -35,7 +45,9 @@ const { createTheme } = createStitches({
     },
     fontWeights: {
       1: 400,
-      2: 600,
+      2: 500,
+      3: 600,
+      4: 700,
     },
     lineHeights: {
       1: 1.2,
@@ -47,33 +59,37 @@ const { createTheme } = createStitches({
       3: '16px',
       4: '99999px',
     },
+    fonts: {
+      untitled: 'Untitled Sans, apple-system, sans-serif',
+      mono: 'Söhne Mono, menlo, monospace',
+    },
     colors: {
-      ...grassA,
+      ...brown,
       ...oliveA,
 
-      appBackground: '$grassA1',
-      cardBackground: '$grassA2',
-      sideBackground: '$grassA2',
+      appBackground: '$brown1',
+      cardBackground: '$brown2',
+      sideBackground: '$brown2',
 
-      subtleNormalBackground: '$grassA3',
-      subtleHoverBackground: '$grassA4',
-      subtlePressedBackground: '$grassA5',
+      subtleNormalBackground: '$brown3',
+      subtleHoverBackground: '$brown4',
+      subtlePressedBackground: '$brown5',
 
-      solidNormalBackground: '$grassA9',
-      solidHoverBackground: '$grassA10',
-      solidPressedBackground: '$grassA10',
+      solidNormalBackground: '$brown9',
+      solidHoverBackground: '$brown10',
+      solidPressedBackground: '$brown10',
 
       greyTextLowContrast: '$oliveA11',
       greyTextHighContrast: '$oliveA12',
 
       white: "#FFF",
 
-      colorTextLowContrast: '$grassA11',
-      colorTextHighContrast: '$grassA12',
+      colorTextLowContrast: '$brown11',
+      colorTextHighContrast: '$brown12',
 
-      separators: "$grassA6",
-      border: "$grassA7",
-      borderHover: "$grassA8",
+      separators: "$brown6",
+      border: "$brown7",
+      borderHover: "$brown8",
     }
   }
 })
