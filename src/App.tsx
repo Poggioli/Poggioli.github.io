@@ -1,7 +1,6 @@
 import globalStyles from "./theme/global-styles"
 
 function App() {
-
   globalStyles()
 
   return (
