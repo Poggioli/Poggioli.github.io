@@ -8,7 +8,7 @@ export interface NavProviderProps {
 }
 
 const NavProvider: FC<NavProviderProps> = ({ children }) => {
-  const [title, setTitle] = useState(".toString()");
+  const [title, setTitle] = useState("");
 
   const value = useMemo(() => ({ title, setTitle }), [title]);
 

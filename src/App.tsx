@@ -1,15 +1,21 @@
 import { FC } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
-import NavProvider from "./components/navbar/context";
+import Home from "./pages/home";
 import globalStyles from "./themes/global-styles";
 
 const App: FC = () => {
   globalStyles();
 
   return (
-    <NavProvider>
+    <>
       <Navbar />
-    </NavProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 

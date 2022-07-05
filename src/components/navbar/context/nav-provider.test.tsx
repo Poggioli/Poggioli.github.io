@@ -1,16 +1,25 @@
+/* eslint-disable react/require-default-props */
 import { FC, useContext, useMemo, useState } from "react";
 import { render } from "@testing-library/react";
 import NavProvider, { NavContext, NavProviderProps } from ".";
 import { NavContextType } from "../../../@types/nav";
 
 interface ITestNavProvider extends NavProviderProps {
-  titleValue: string;
+  title?: string;
+  setTitle?(value: string): void;
 }
 
-const TestNavProvider: FC<ITestNavProvider> = ({ children, titleValue }) => {
-  const [title, setTitle] = useState(titleValue);
+const TestNavProvider: FC<ITestNavProvider> = ({
+  children,
+  title,
+  setTitle,
+}) => {
+  const [titleFromState, setTitleFromState] = useState(title || "title");
 
-  const value = useMemo(() => ({ title, setTitle }), [title]);
+  const value = useMemo(
+    () => ({ title: titleFromState, setTitle: setTitle || setTitleFromState }),
+    [titleFromState],
+  );
 
   return <NavContext.Provider value={value}>{children}</NavContext.Provider>;
 };
