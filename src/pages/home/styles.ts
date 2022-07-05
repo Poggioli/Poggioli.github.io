@@ -2,7 +2,7 @@ import { css, styled } from "../../themes/stitches.config";
 
 const Container = styled("div", {
   margin: "0 $6",
-  padding: "calc(50vh - 6.5rem) 0 0",
+  padding: "calc(50vh - 15rem) 0 0",
 
   "@sm": {
     margin: "0 $8",
@@ -37,4 +37,26 @@ const Body = css({
   color: "$mauve11",
 });
 
-export { Container, WhoIAm, Title, TitleHighLight, SubTitle, Body };
+const AnimationContainer = styled("div", {
+  position: "fixed",
+  bottom: 0,
+  left: 0,
+
+  "@lg": {
+    right: 0,
+  },
+
+  "@xlg": {
+    left: "50vw",
+  },
+});
+
+export {
+  Container,
+  WhoIAm,
+  Title,
+  TitleHighLight,
+  SubTitle,
+  Body,
+  AnimationContainer,
+};

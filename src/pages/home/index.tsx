@@ -1,5 +1,6 @@
 import { FC, useContext } from "react";
 import { NavContextType } from "../../@types/nav";
+import LottieControl from "../../components/lottie-control";
 import { NavContext } from "../../components/navbar/context";
 import Text from "../../components/text";
 import {
@@ -9,7 +10,9 @@ import {
   Title,
   TitleHighLight,
   WhoIAm,
+  AnimationContainer,
 } from "./styles";
+import birdie from "../../assets/lottie/birdie-home.json";
 
 interface HomeProps {}
 
@@ -20,6 +23,10 @@ const Home: FC<HomeProps> = () => {
 
   return (
     <Container>
+      <AnimationContainer>
+        <LottieControl animationData={birdie} speed={0.65} />
+      </AnimationContainer>
+
       <WhoIAm>
         <Text
           as="h1"
@@ -42,7 +49,9 @@ const Home: FC<HomeProps> = () => {
         <Text fontSizes={{ "@sm": 6 }} as="p" className={Body()}>
           Passionate about frontend development,
           <br />
-          problem solving, UI/UX, family and birds.
+          problem solving, UI/UX, family, friends,
+          <br />
+          girlfriend and birds.
         </Text>
       </WhoIAm>
     </Container>
