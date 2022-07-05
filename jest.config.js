@@ -2,10 +2,18 @@ module.exports = {
     roots: ["<rootDir>/src"],
     collectCoverageFrom: [
         "src/**/*.{js,jsx,ts,tsx}",
+        "!src/**/*.test.{js,jsx,ts,tsx}",
         "!src/**/*.d.ts",
         "!src/mocks/**",
     ],
-    coveragePathIgnorePatterns: [],
+    collectCoverage: true,
+    coveragePathIgnorePatterns: [
+        "global-styles.ts",
+        "stitches.config.ts",
+        "App.tsx",
+        "main.tsx",
+        "styles.ts"
+    ],
     setupFilesAfterEnv: ["./config/jest/setupTests.js"],
     testEnvironment: "jsdom",
     transform: {
