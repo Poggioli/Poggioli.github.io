@@ -8,7 +8,7 @@ const globalStyles = globalCss({
   },
 
   "html, body": {
-    height: "100vh",
+    height: "100%",
     background: "$violet1",
   },
 });

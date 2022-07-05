@@ -2,7 +2,7 @@ import { css, styled } from "../../themes/stitches.config";
 
 const Container = styled("div", {
   margin: "0 $6",
-  padding: "calc(50vh - 3.5rem) 0 0",
+  padding: "calc(50vh - 6.5rem) 0 0",
 
   "@sm": {
     margin: "0 $8",
