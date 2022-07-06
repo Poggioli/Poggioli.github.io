@@ -1,4 +1,4 @@
-import Lottie from "lottie-react-web";
+import Lottie, { LottieEventListener } from "lottie-react-web";
 import { FC } from "react";
 
 interface LottieControlProps {
@@ -10,6 +10,7 @@ interface LottieControlProps {
   speed?: number;
   height?: string;
   width?: string;
+  eventListeners?: LottieEventListener[];
   animationData: any;
 }
 
@@ -23,6 +24,7 @@ const LottieControl: FC<LottieControlProps> = ({
   speed,
   height,
   width,
+  eventListeners,
 }) => {
   const defaultOptions = {
     loop,
@@ -42,6 +44,7 @@ const LottieControl: FC<LottieControlProps> = ({
       options={defaultOptions}
       isStopped={isStopped}
       isPaused={isPaused}
+      eventListeners={eventListeners}
     />
   );
 };
@@ -55,6 +58,7 @@ LottieControl.defaultProps = {
   speed: 1,
   height: "400px",
   width: "400px",
+  eventListeners: [],
 };
 
 export default LottieControl;
