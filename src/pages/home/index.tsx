@@ -21,7 +21,7 @@ const Home: FC<HomeProps> = () => {
   const { setTitle } = useContext(NavContext) as NavContextType;
   const [direction, setDirection] = useState<1 | -1 | undefined>(1);
 
-  setTitle(".toString()");
+  setTitle(".home()");
 
   const eventListeners: LottieEventListener[] = [
     {
@@ -56,7 +56,7 @@ const Home: FC<HomeProps> = () => {
             fontSizes={{ "@initial": 8, "@sm": 9, "@lg": 10 }}
             className={TitleHighLight()}
           >
-            .toString()
+            .home()
           </Text>
         </Text>
 

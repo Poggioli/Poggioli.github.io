@@ -19,7 +19,13 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "ignorePatterns": ["vite.config.ts", "jest.config.js"],
+  "ignorePatterns": [
+    "vite.config.ts",
+    "jest.config.js",
+    "/dist",
+    "/config",
+    "/coverage"
+  ],
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "react/jsx-one-expression-per-line": "off",
