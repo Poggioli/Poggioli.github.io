@@ -1,7 +1,9 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Line from "./components/line";
 import Navbar from "./components/navbar";
 import Home from "./pages/home";
+import Container from "./style";
 import globalStyles from "./themes/global-styles";
 
 const App: FC = () => {
@@ -9,12 +11,15 @@ const App: FC = () => {
 
   return (
     <>
+      <Line />
       <Navbar />
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter>
+      <Container>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
     </>
   );
 };
