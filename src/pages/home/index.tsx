@@ -6,7 +6,6 @@ import { NavContext } from "../../components/navbar/context";
 import Text from "../../components/text";
 import {
   Body,
-  Container,
   SubTitle,
   Title,
   TitleHighLight,
@@ -35,7 +34,7 @@ const Home: FC<HomeProps> = () => {
   ];
 
   return (
-    <Container>
+    <>
       <AnimationContainer>
         <LottieControl
           animationData={birdie}
@@ -75,7 +74,7 @@ const Home: FC<HomeProps> = () => {
           </Text>
         </WrapperBody>
       </WhoIAm>
-    </Container>
+    </>
   );
 };
 
