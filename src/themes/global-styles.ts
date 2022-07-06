@@ -5,6 +5,7 @@ const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     fontFamily: "$ubuntu-mono",
+    boxSizing: "border-box",
   },
 
   "html, body": {

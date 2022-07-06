@@ -12,19 +12,19 @@ describe("<Home/>", () => {
     );
   };
 
-  it('should call setTitleMock with ".toString()" value', () => {
+  it('should call setTitleMock with ".home()" value', () => {
     setup();
     expect(setTitleMock).toHaveBeenCalledTimes(1);
-    expect(setTitleMock).toHaveBeenCalledWith(".toString()");
+    expect(setTitleMock).toHaveBeenCalledWith(".home()");
   });
 
   it("should have text title in document", () => {
     const { getByText } = setup();
     const joaoLabel = getByText(/joao/im);
-    const toStringLabel = getByText(/.tostring()/im);
+    const homeLabel = getByText(/.home()/im);
 
     expect(joaoLabel).toBeInTheDocument();
-    expect(toStringLabel).toBeInTheDocument();
+    expect(homeLabel).toBeInTheDocument();
   });
 
   it("should have text subtitle in document", () => {
