@@ -91,6 +91,10 @@ const Contents = styled("div", {
   },
 });
 
+const BodySubtitleStyle = css({
+  maxWidth: "40rem",
+});
+
 export {
   ContainerMainActions,
   DownloadIcon,
@@ -101,4 +105,5 @@ export {
   WrapperIcon,
   WrapperResume,
   Contents,
+  BodySubtitleStyle,
 };

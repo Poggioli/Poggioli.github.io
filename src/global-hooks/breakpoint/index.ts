@@ -28,7 +28,7 @@ const getDeviceConfig = (width: number): BREAKPOINTS => {
   return BREAKPOINTS.XXLG;
 };
 
-const useBrakpoint = () => {
+const useBreakpoint = () => {
   const [breakpoint, setBreakpoint] = useState(() =>
     getDeviceConfig(window.innerWidth),
   );
@@ -44,4 +44,4 @@ const useBrakpoint = () => {
   return breakpoint;
 };
 
-export default useBrakpoint;
+export default useBreakpoint;
