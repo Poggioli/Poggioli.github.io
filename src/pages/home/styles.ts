@@ -34,7 +34,7 @@ const leftToRight = keyframes({
   },
 });
 
-const WhoIAm = styled("div", {
+const WhoIAm = styled("section", {
   display: "flex",
   flexDirection: "column",
 });

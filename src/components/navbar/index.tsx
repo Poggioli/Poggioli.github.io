@@ -23,6 +23,10 @@ const Navbar: FC<NavbarProps> = () => {
       href: "/",
     },
     {
+      label: ".about()",
+      href: "/about",
+    },
+    {
       label: "",
       href: "",
       children: (
