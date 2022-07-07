@@ -1,18 +1,21 @@
-import { styled } from "../../themes/stitches.config";
+import { css, styled } from "../../themes/stitches.config";
 
 const AnimationContainer = styled("div", {
-  position: "fixed",
-  bottom: 0,
-  left: 0,
-
-  "@lg": {
-    right: 0,
+  "@md": {
+    paddingLeft: "$9",
   },
+});
 
-  "@xlg": {
-    left: "50vw",
+const Box = styled("div", {});
+
+const Flex = css({
+  alignItems: "start",
+
+  "@md": {
+    flexDirection: "row !important",
+    alignItems: "inherit",
   },
 });
 
 // eslint-disable-next-line import/prefer-default-export
-export { AnimationContainer };
+export { AnimationContainer, Box, Flex };

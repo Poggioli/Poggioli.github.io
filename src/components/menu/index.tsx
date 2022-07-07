@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import useBrakpoint, { BREAKPOINTS } from "../../global-hooks/breakpoint";
+import useBreakpoint, { BREAKPOINTS } from "../../global-hooks/breakpoint";
 import MenuItem, { MenuItemProps } from "./menu-item";
 import {
   BackDrop,
@@ -23,7 +23,7 @@ const Menu: FC<MenuProps> = ({ items }) => {
     setOpen((openState: boolean) => !openState);
   };
 
-  const windowSize: BREAKPOINTS = useBrakpoint();
+  const windowSize: BREAKPOINTS = useBreakpoint();
 
   useEffect(() => {
     if (windowSize > BREAKPOINTS.SM) {

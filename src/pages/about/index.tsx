@@ -18,6 +18,7 @@ import {
   LinkedinIcon,
   LinkIcon,
   WrapperIcon,
+  BodySubtitleStyle,
 } from "./style";
 
 interface AboutProps {}
@@ -77,7 +78,11 @@ const About: FC<AboutProps> = () => {
           </WrapperResume> */}
         </ContainerMainActions>
 
-        <BodySubtitle fontSizes={{ "@sm": 6 }} as="p">
+        <BodySubtitle
+          className={BodySubtitleStyle()}
+          fontSizes={{ "@sm": 6 }}
+          as="p"
+        >
           A young man passionate about solving problems using technology. I am
           ingenious and curious frontend developer. From Brazil, based in
           Campinas - SP

@@ -36,6 +36,7 @@ const leftToRight = keyframes({
 });
 
 const Section = styled("section", {
+  maxWidth: "64rem",
   display: "flex",
   flexDirection: "column",
 });
@@ -52,6 +53,7 @@ const HighLight = styled(Text, {
 
 const Body = styled("div", {
   animation: `${leftToRight} 3000ms, ${fadeIn} 3000ms`,
+  width: "fit-content",
 });
 
 const BodySubtitle = styled(Text, {
