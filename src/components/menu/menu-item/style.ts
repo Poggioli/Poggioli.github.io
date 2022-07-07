@@ -1,6 +1,7 @@
-import { css } from "../../../themes/stitches.config";
+import { Link } from "react-router-dom";
+import { styled } from "../../../themes/stitches.config";
 
-const MenuItemStyle = css({
+const Label = styled(Link, {
   color: "$mauve11",
   textDecoration: "inherit",
   transition: "all 500ms ease",
@@ -10,4 +11,4 @@ const MenuItemStyle = css({
   },
 });
 
-export default MenuItemStyle;
+export default Label;
