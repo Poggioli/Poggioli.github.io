@@ -23,7 +23,7 @@ const Container = styled("div", {
   animation: `${moveToTop} 2500ms`,
 
   "@lg": {
-    left: "calc(25vw - 2rem)",
+    left: "calc(24vw - 2rem)",
   },
 });
 

@@ -1,24 +1,23 @@
 import { FC, useContext } from "react";
 import { NavContextType } from "../../@types/nav";
 import { NavContext } from "../../components/navbar/context";
-import Text from "../../components/text";
 import {
+  Body,
+  BodyMoreInfo,
+  BodySubtitle,
   HighLight,
   PageTitle,
   Section,
-  Body,
-  BodySubtitle,
-  BodyMoreInfo,
 } from "../styles";
+import MainSkills from "./about-sections/main-skills";
+import ToolsYears from "./about-sections/tools-years";
 import {
   ContainerMainActions,
-  DownloadIcon,
-  DownloadLabel,
+  Contents,
   GitHubIcon,
   LinkedinIcon,
   LinkIcon,
   WrapperIcon,
-  WrapperResume,
 } from "./style";
 
 interface AboutProps {}
@@ -26,8 +25,8 @@ interface AboutProps {}
 const About: FC<AboutProps> = () => {
   const { setTitle } = useContext(NavContext) as NavContextType;
 
-  const startYearOfMyExperience: number = 2017;
-  const yearsExperience = new Date().getFullYear() - startYearOfMyExperience;
+  const since: number = 2017;
+  const yearsExperience = new Date().getFullYear() - since;
 
   setTitle(".about()");
 
@@ -67,7 +66,7 @@ const About: FC<AboutProps> = () => {
               <GitHubIcon />
             </LinkIcon>
           </WrapperIcon>
-          <WrapperResume>
+          {/* <WrapperResume>
             <Text fontSizes={{ "@sm": 6 }}>
               Download my
               <Text fontSizes={{ "@sm": 6 }} className={DownloadLabel()}>
@@ -75,7 +74,7 @@ const About: FC<AboutProps> = () => {
                 <DownloadIcon />
               </Text>
             </Text>
-          </WrapperResume>
+          </WrapperResume> */}
         </ContainerMainActions>
 
         <BodySubtitle fontSizes={{ "@sm": 6 }} as="p">
@@ -91,6 +90,11 @@ const About: FC<AboutProps> = () => {
         >
           &frasl;&frasl; {yearsExperience}+ years of experience
         </BodyMoreInfo>
+
+        <Contents>
+          <MainSkills />
+          <ToolsYears />
+        </Contents>
       </Body>
     </Section>
   );

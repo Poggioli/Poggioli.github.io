@@ -10,6 +10,8 @@ import {
   GitHubIcon,
   ContainerIcons,
   LinkIcon,
+  LinearGradient,
+  Container,
 } from "./styles";
 
 interface NavbarProps {}
@@ -47,11 +49,14 @@ const Navbar: FC<NavbarProps> = () => {
 
   return (
     <Nav>
-      <Text fontSizes={6} as="a" css={{ color: "$violet11" }}>
-        {title}
-      </Text>
+      <Container>
+        <Text fontSizes={6} as="a" css={{ color: "$violet11" }}>
+          {title}
+        </Text>
 
-      <Menu items={menuItems} />
+        <Menu items={menuItems} />
+      </Container>
+      <LinearGradient />
     </Nav>
   );
 };

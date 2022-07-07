@@ -5,9 +5,6 @@ const Nav = styled("nav", {
   zIndex: 2,
   position: "fixed",
   width: "100vw",
-  padding: "$4",
-  display: "flex",
-  justifyContent: "space-between",
 });
 
 const ContainerIcons = styled("div", {
@@ -61,4 +58,26 @@ const LinkedinIcon = styled(FaLinkedinIn, {});
 
 const GitHubIcon = styled(FaGithub, {});
 
-export { Nav, LinkedinIcon, GitHubIcon, ContainerIcons, LinkIcon };
+const LinearGradient = styled("div", {
+  background: "linear-gradient(to top, transparent, $violet1 70%)",
+  width: "100vw",
+  height: "5rem",
+  marginTop: "-1px",
+});
+
+const Container = styled("div", {
+  padding: "$4",
+  display: "flex",
+  justifyContent: "space-between",
+  background: "$violet1",
+});
+
+export {
+  Nav,
+  LinkedinIcon,
+  GitHubIcon,
+  ContainerIcons,
+  LinkIcon,
+  LinearGradient,
+  Container,
+};

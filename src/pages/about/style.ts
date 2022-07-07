@@ -83,6 +83,14 @@ const DownloadIcon = styled(MdOutlineFileDownload, {});
 
 const GitHubIcon = styled(FaGithub, {});
 
+const Contents = styled("div", {
+  paddingRight: "$4",
+
+  ">*": {
+    marginTop: "$8",
+  },
+});
+
 export {
   ContainerMainActions,
   DownloadIcon,
@@ -92,4 +100,5 @@ export {
   LinkIcon,
   WrapperIcon,
   WrapperResume,
+  Contents,
 };
