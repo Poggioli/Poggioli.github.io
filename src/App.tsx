@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Line from "./components/line";
 import Navbar from "./components/navbar";
 import About from "./pages/about";
@@ -10,17 +10,18 @@ import globalStyles from "./themes/global-styles";
 const App: FC = () => {
   globalStyles();
 
+  // const bla = process;
+  // console.log(bla);
+
   return (
     <>
       <Line />
       <Navbar />
       <Container>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </Container>
     </>
   );

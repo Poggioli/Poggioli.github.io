@@ -1,6 +1,6 @@
+/* eslint-disable react/no-unused-prop-types */
 import { FC, ReactNode } from "react";
-import Text from "../../text";
-import MenuItemStyle from "./style";
+import Label from "./style";
 
 export interface MenuItemProps {
   label: string;
@@ -8,13 +8,8 @@ export interface MenuItemProps {
   children?: ReactNode;
 }
 
-const MenuItem: FC<MenuItemProps> = ({ label, href, children }) => {
-  return (
-    <Text className={MenuItemStyle()} as="a" href={href}>
-      {label}
-      {children}
-    </Text>
-  );
+const MenuItem: FC<MenuItemProps> = ({ label, href }) => {
+  return <Label to={href}>{label}</Label>;
 };
 
 MenuItem.defaultProps = {

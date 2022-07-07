@@ -40,7 +40,7 @@ const Menu: FC<MenuProps> = ({ items }) => {
         <CloseIcon onClick={handleToggleMenu} />
         <List>
           {items.map((item: MenuItemProps) => (
-            <ListItem onClick={handleToggleMenu}>
+            <ListItem key={item.href} onClick={handleToggleMenu}>
               {item.children ? (
                 item.children
               ) : (
