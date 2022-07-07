@@ -2,6 +2,9 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { styled } from "../../themes/stitches.config";
 
 const Nav = styled("nav", {
+  zIndex: 2,
+  position: "fixed",
+  width: "100vw",
   padding: "$4",
   display: "flex",
   justifyContent: "space-between",

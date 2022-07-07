@@ -3,17 +3,20 @@ import { NavContextType } from "../../@types/nav";
 import { NavContext } from "../../components/navbar/context";
 import Text from "../../components/text";
 import {
+  HighLight,
+  PageTitle,
+  Section,
   Body,
-  Container,
+  BodySubtitle,
+  BodyMoreInfo,
+} from "../styles";
+import {
   ContainerMainActions,
   DownloadIcon,
   DownloadLabel,
   GitHubIcon,
   LinkedinIcon,
   LinkIcon,
-  Title,
-  TitleHighLight,
-  WrapperBody,
   WrapperIcon,
   WrapperResume,
 } from "./style";
@@ -29,23 +32,29 @@ const About: FC<AboutProps> = () => {
   setTitle(".about()");
 
   return (
-    <Container>
-      <Text
+    <Section>
+      <PageTitle
         as="h1"
-        fontSizes={{ "@initial": 8, "@sm": 9, "@lg": 10 }}
-        className={Title()}
+        fontSizes={{
+          "@initial": 8,
+          "@sm": 9,
+          "@lg": 10,
+        }}
       >
         about(
-        <Text
-          fontSizes={{ "@initial": 8, "@sm": 9, "@lg": 10 }}
-          className={TitleHighLight()}
+        <HighLight
+          fontSizes={{
+            "@initial": 8,
+            "@sm": 9,
+            "@lg": 10,
+          }}
         >
           &quot;João&quot;
-        </Text>
+        </HighLight>
         )
-      </Text>
+      </PageTitle>
 
-      <WrapperBody>
+      <Body>
         <ContainerMainActions>
           <WrapperIcon>
             <LinkIcon
@@ -69,21 +78,21 @@ const About: FC<AboutProps> = () => {
           </WrapperResume>
         </ContainerMainActions>
 
-        <Text fontSizes={{ "@sm": 6 }} as="p" className={Body()}>
+        <BodySubtitle fontSizes={{ "@sm": 6 }} as="p">
           A young man passionate about solving problems using technology. I am
           ingenious and curious frontend developer. From Brazil, based in
           Campinas - SP
-        </Text>
+        </BodySubtitle>
 
-        <Text
+        <BodyMoreInfo
           as="p"
-          css={{ color: "$mauve8", marginTop: "$4" }}
+          css={{ color: "$mauve8" }}
           fontSizes={{ "@sm": 6 }}
         >
           &frasl;&frasl; {yearsExperience}+ years of experience
-        </Text>
-      </WrapperBody>
-    </Container>
+        </BodyMoreInfo>
+      </Body>
+    </Section>
   );
 };
 

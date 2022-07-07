@@ -63,7 +63,6 @@ const BackDrop = styled("div", {
   width: "100vw",
   height: "100%",
   opacity: 0,
-  zIndex: 2,
   pointerEvents: "none",
   transition: "all 1500ms ease",
 
@@ -73,7 +72,7 @@ const BackDrop = styled("div", {
 });
 
 const ContainerOpened = css({
-  right: 0,
+  left: 0,
 });
 
 const Container = styled("div", {
@@ -86,18 +85,17 @@ const Container = styled("div", {
   alignItems: "end",
   justifyContent: "space-between",
   padding: "$4 $4 $8 $4",
-  zIndex: 2,
   opacity: 1,
-  right: "-100vw",
+  left: "100vw",
   transition: "all 1500ms ease",
 
   "@md": {
-    position: "inherit",
+    position: "static",
     backgroundColor: "inherit",
     padding: "0",
     flexDirection: "row",
     width: "inherit",
-    zIndex: "inherit",
+    justifyContent: "end",
   },
 });
 

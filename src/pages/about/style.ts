@@ -1,69 +1,11 @@
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { css, keyframes, styled } from "../../themes/stitches.config";
-
-// help https://ramlmn.github.io/visualizing-matrix3d/
-const rotate = keyframes({
-  "0%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, -48, 0, 1)",
-  },
-  "100%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
-  },
-});
-
-const fadeIn = keyframes({
-  "0%": {
-    opacity: 0,
-  },
-  "20%": {
-    opacity: 0,
-  },
-  "80%": {
-    opacity: 1,
-  },
-});
-
-const leftToRight = keyframes({
-  "0%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -200, 0, 0, 1)",
-  },
-  "20%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1)",
-  },
-  "100%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
-  },
-});
-
-const Container = styled("section", {
-  display: "flex",
-  flexDirection: "column",
-});
-
-const Title = css({
-  display: "inline-block",
-  marginBottom: "$4",
-  animation: `${rotate} 3000ms, ${fadeIn} 2000ms`,
-});
-
-const TitleHighLight = css({
-  color: "$violet11",
-});
-
-const Body = css({
-  color: "$violet11",
-  marginTop: "$4",
-});
-
-const WrapperBody = styled("div", {
-  animation: `${leftToRight} 3000ms, ${fadeIn} 3000ms`,
-  maxWidth: "40rem",
-});
+import { css, styled } from "../../themes/stitches.config";
 
 const ContainerMainActions = styled("div", {
   display: "flex",
   flexDirection: "column",
+  marginBottom: "$6",
 
   "@sm": {
     flexDirection: "row",
@@ -101,7 +43,7 @@ const DownloadLabel = css({
   color: "$violet11",
   display: "inline-flex",
   alignItems: "center",
-  transition: "all 500ms ease",
+  transition: "color 500ms ease",
 
   " *": {
     fontSize: "$7",
@@ -142,17 +84,12 @@ const DownloadIcon = styled(MdOutlineFileDownload, {});
 const GitHubIcon = styled(FaGithub, {});
 
 export {
-  Body,
-  Container,
   ContainerMainActions,
   DownloadIcon,
   DownloadLabel,
   GitHubIcon,
   LinkedinIcon,
   LinkIcon,
-  Title,
-  TitleHighLight,
-  WrapperBody,
   WrapperIcon,
   WrapperResume,
 };
