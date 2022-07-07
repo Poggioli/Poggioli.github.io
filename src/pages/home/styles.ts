@@ -1,63 +1,4 @@
-import { css, keyframes, styled } from "../../themes/stitches.config";
-
-// help https://ramlmn.github.io/visualizing-matrix3d/
-const rotate = keyframes({
-  "0%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, -48, 0, 1)",
-  },
-  "100%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
-  },
-});
-
-const fadeIn = keyframes({
-  "0%": {
-    opacity: 0,
-  },
-  "20%": {
-    opacity: 0,
-  },
-  "80%": {
-    opacity: 1,
-  },
-});
-
-const leftToRight = keyframes({
-  "0%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -200, 0, 0, 1)",
-  },
-  "20%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 0, 0, 1)",
-  },
-  "100%": {
-    transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)",
-  },
-});
-
-const WhoIAm = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-});
-
-const Title = css({
-  display: "inline-block",
-  marginBottom: "$4",
-  animation: `${rotate} 3000ms, ${fadeIn} 2000ms`,
-});
-
-const TitleHighLight = css({
-  color: "$violet11",
-});
-
-const SubTitle = css({
-  display: "inline-block",
-  color: "$violet11",
-  marginBottom: "$4",
-});
-
-const Body = css({
-  color: "$mauve11",
-});
+import { styled } from "../../themes/stitches.config";
 
 const AnimationContainer = styled("div", {
   position: "fixed",
@@ -73,16 +14,5 @@ const AnimationContainer = styled("div", {
   },
 });
 
-const WrapperBody = styled("div", {
-  animation: `${leftToRight} 3000ms, ${fadeIn} 3000ms`,
-});
-
-export {
-  WhoIAm,
-  Title,
-  TitleHighLight,
-  SubTitle,
-  Body,
-  AnimationContainer,
-  WrapperBody,
-};
+// eslint-disable-next-line import/prefer-default-export
+export { AnimationContainer };

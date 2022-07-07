@@ -1,5 +1,6 @@
 import { createStitches } from "@stitches/react";
 import { violetDark, mauveDark } from "@radix-ui/colors";
+import { BREAKPOINTS } from "../global-hooks/breakpoint";
 
 export const {
   styled,
@@ -12,11 +13,11 @@ export const {
   config,
 } = createStitches({
   media: {
-    sm: "(min-width: 576px)",
-    md: "(min-width: 768px)",
-    lg: "(min-width: 992px)",
-    xlg: "(min-width: 1200px)",
-    xxlg: "(min-width: 1400px)",
+    sm: `(min-width: ${BREAKPOINTS.SM}px)`,
+    md: `(min-width: ${BREAKPOINTS.MD}px)`,
+    lg: `(min-width: ${BREAKPOINTS.LG}px)`,
+    xlg: `(min-width: ${BREAKPOINTS.XLG}px)`,
+    xxlg: `(min-width: ${BREAKPOINTS.XXLG}px)`,
   },
   theme: {
     colors: {
