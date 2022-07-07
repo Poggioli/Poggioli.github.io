@@ -4,7 +4,7 @@ import { styled } from "../../themes/stitches.config";
 const Nav = styled("nav", {
   zIndex: 2,
   position: "fixed",
-  width: "100vw",
+  width: "100%",
 });
 
 const ContainerIcons = styled("div", {
@@ -60,7 +60,6 @@ const GitHubIcon = styled(FaGithub, {});
 
 const LinearGradient = styled("div", {
   background: "linear-gradient(to top, transparent, $violet1 70%)",
-  width: "100vw",
   height: "5rem",
   marginTop: "-1px",
 });

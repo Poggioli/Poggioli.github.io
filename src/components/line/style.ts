@@ -5,7 +5,7 @@ const moveToTop = keyframes({
     top: "100vh",
   },
   "100%": {
-    top: "calc(50vh - 9rem)",
+    top: "calc(50vh - 1rem)",
   },
 });
 
@@ -17,7 +17,7 @@ const VerticalDivider = styled("div", {
 
 const Container = styled("div", {
   position: "fixed",
-  top: "calc(50vh - 9rem)",
+  top: "calc(50vh - 1rem)",
   bottom: 0,
   left: "$4",
   animation: `${moveToTop} 2500ms`,
