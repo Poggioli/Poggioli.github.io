@@ -97,7 +97,7 @@ const BodySubtitleStyle = css({
 
 const AnimationContainer = styled("div", {
   position: "fixed",
-  top: "calc(50vh - 200px)",
+  // top: "calc(50vh - 200px)",
   zIndex: 0,
   opacity: 0.2,
   transition: "transform 500ms ease",

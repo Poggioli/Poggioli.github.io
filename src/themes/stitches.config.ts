@@ -13,7 +13,8 @@ export const {
   config,
 } = createStitches({
   media: {
-    sm: `(min-width: ${BREAKPOINTS.SM}px)`,
+    xs: `(max-width: ${BREAKPOINTS.XS}px)`,
+    sm: `(min-width: ${BREAKPOINTS.XS}px)`,
     md: `(min-width: ${BREAKPOINTS.MD}px)`,
     lg: `(min-width: ${BREAKPOINTS.LG}px)`,
     xlg: `(min-width: ${BREAKPOINTS.XLG}px)`,

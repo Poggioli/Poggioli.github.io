@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export enum BREAKPOINTS {
-  XS = 0,
+  XS = 415,
   SM = 576,
   MD = 768,
   LG = 992,
