@@ -10,6 +10,7 @@ import {
   Section,
 } from "../styles";
 import Experiences from "./about-sections/experiences";
+import Idioms from "./about-sections/idioms";
 import MainSkills from "./about-sections/main-skills";
 import ToolsYears from "./about-sections/tools-years";
 import {
@@ -101,6 +102,7 @@ const About: FC<AboutProps> = () => {
           <MainSkills />
           <ToolsYears />
           <Experiences />
+          <Idioms />
         </Contents>
       </Body>
     </Section>

@@ -25,6 +25,11 @@ const MainSkills: FC<MainSkillsProps> = () => {
           Node.js, BEM
         </Info>
         <Info as="p" fontSizes={{ "@sm": 5 }}>
+          Micro-frontend&apos;s,
+          <br />
+          Micro-service&apos;s
+        </Info>
+        <Info as="p" fontSizes={{ "@sm": 5 }}>
           CSS, HTML,
           <br />
           Python, Sass,
