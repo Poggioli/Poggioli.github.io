@@ -33,8 +33,9 @@ interface AboutProps {}
 const About: FC<AboutProps> = () => {
   const { setTitle } = useContext(NavContext) as NavContextType;
   const [leftPosition, setLeftPosition] = useState(0);
+  const [topPosition, setTopPosition] = useState<number | string>(0);
   const [rotation, setRotation] = useState(0);
-  const { width } = useWindow();
+  const { width, height } = useWindow();
   const animationSize = 400;
   const scrollPosition = useScrollPosition();
 
@@ -60,12 +61,23 @@ const About: FC<AboutProps> = () => {
 
       return nextLeftPosition;
     });
+
+    setTopPosition(
+      scrollPosition > 0.5
+        ? scrollPosition * (height - animationSize) +
+            animationSize * (scrollPosition - (1 - scrollPosition))
+        : "calc(50% - 200px)",
+    );
   }, [scrollPosition]);
 
   return (
     <Section>
       <AnimationContainer
-        css={{ left: leftPosition, transform: `rotateY(${rotation}deg)` }}
+        css={{
+          left: leftPosition,
+          top: topPosition,
+          transform: `rotateY(${rotation}deg)`,
+        }}
       >
         <LottieControl animationData={dogWalk} loop speed={0.75} />
       </AnimationContainer>
