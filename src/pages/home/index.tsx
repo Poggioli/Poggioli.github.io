@@ -19,7 +19,6 @@ interface HomeProps {}
 const Home: FC<HomeProps> = () => {
   const { setTitle } = useContext(NavContext) as NavContextType;
   const [direction, setDirection] = useState<1 | -1 | undefined>(1);
-  const [size] = useState("250px");
 
   setTitle(".home()");
 
@@ -73,8 +72,8 @@ const Home: FC<HomeProps> = () => {
 
       <AnimationContainer>
         <LottieControl
-          height={size}
-          width={size}
+          height="250px"
+          width="250px"
           animationData={birdie}
           direction={direction}
           loop={false}

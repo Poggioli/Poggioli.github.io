@@ -14,7 +14,7 @@ const InfoContainer = styled("div", {
     gridTemplate: "1fr/repeat(3, 1fr)",
   },
 
-  "@md": {
+  "@xlg": {
     gridTemplate: "1fr/repeat(4, 1fr)",
   },
 });

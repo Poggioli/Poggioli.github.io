@@ -38,6 +38,11 @@ const ToolsYears: FC<ToolsYearsProps> = () => {
           Scrum/{yearsExperience(2017)}
         </Info>
         <Info as="p" fontSizes={{ "@sm": 5 }}>
+          Micro-frontend&apos;s/{yearsExperience(2020)}
+          <br />
+          Micro-service&apos;s/{yearsExperience(2020)}
+        </Info>
+        <Info as="p" fontSizes={{ "@sm": 5 }}>
           CSS/{yearsExperience(2017)}
           <br />
           HTML/{yearsExperience(2017)}
