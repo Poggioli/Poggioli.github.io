@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
 import App from "./App";
-import NavProvider from "./components/navbar/context";
+import { ScrollToTop } from "./components/common/ScrollToTop";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <HashRouter>
-      <NavProvider>
+      <ScrollToTop>
         <App />
-      </NavProvider>
+      </ScrollToTop>
     </HashRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
