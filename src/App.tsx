@@ -1,27 +1,40 @@
+import { Box, Container } from "@modulz/design-system";
 import { FC } from "react";
 import { Route, Routes } from "react-router-dom";
-import Line from "./components/line";
-import Navbar from "./components/navbar";
-import About from "./pages/about";
-import Home from "./pages/home";
-import Container from "./style";
-import globalStyles from "./themes/global-styles";
+import { Footer } from "./components/common/Footer";
+import { Header } from "./components/common/Header";
+import { globalStyles } from "./globals/style";
+import { About } from "./pages/About";
+import { Experiences } from "./pages/Experiences";
+import { CIandTExperience } from "./pages/Experiences/work/CIandTExperience/CIandT";
+import { Home } from "./pages/Home";
 
 const App: FC = () => {
   globalStyles();
-
-  // const bla = process;
-  // console.log(bla);
-
   return (
     <>
-      <Line />
-      <Navbar />
-      <Container>
+      <Header />
+      <Box
+        css={{
+          minHeight: "100vh",
+          height: "100%",
+          pt: "$8",
+        }}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/experiences" element={<Experiences />} />
+          <Route path="/experiences/ciandt" element={<CIandTExperience />} />
         </Routes>
+      </Box>
+      <Container
+        size="3"
+        css={{
+          width: "100%",
+        }}
+      >
+        <Footer />
       </Container>
     </>
   );
