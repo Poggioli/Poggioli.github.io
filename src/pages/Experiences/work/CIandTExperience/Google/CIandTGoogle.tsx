@@ -11,6 +11,16 @@ import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTGoogle: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "Angular", href: "https://angular.io/" },
+    { label: "Angularjs", href: "https://angularjs.org/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "Testing Library", href: "https://testing-library.com/" },
+    { label: "Python3", href: "https://www.python.org/" },
+    { label: "GCP", href: "https://cloud.google.com/" },
+    { label: "Angular Material", href: "https://material.angular.io/" },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -79,71 +89,18 @@ export const CIandTGoogle: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angular.io/"
-          target="_blank"
-        >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angularjs.org/"
-          target="_blank"
-        >
-          AngularJs
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.python.org/"
-          target="_blank"
-        >
-          Python3
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://cloud.google.com/"
-          target="_blank"
-        >
-          GCP
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://material.angular.io/"
-          target="_blank"
-        >
-          Angular Material
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );

@@ -11,6 +11,14 @@ import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTItau: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "Joomla", href: "https://www.joomla.org/" },
+    { label: "Angular", href: "https://angular.io/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "TypeScript", href: "https://www.typescriptlang.org/" },
+    { label: "Java", href: "https://www.java.com/" },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -87,60 +95,18 @@ export const CIandTItau: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.joomla.org/"
-          target="_blank"
-        >
-          Joomla
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angular.io/"
-          target="_blank"
-        >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-        >
-          TypeScript
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.java.com/"
-          target="_blank"
-        >
-          Java
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );

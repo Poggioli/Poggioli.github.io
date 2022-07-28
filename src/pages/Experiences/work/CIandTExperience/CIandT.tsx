@@ -1,6 +1,7 @@
 import {
   Box,
   Container,
+  Heading,
   Link,
   Paragraph,
   Section,
@@ -62,12 +63,12 @@ export const CIandTExperience: FC = () => {
           </Box>
 
           <Box>
-            <ExternalLink as="h1" css={{ fontSize: "$7", mb: "$3" }}>
+            <Heading as="h1" css={{ fontSize: "$7", mb: "$3" }}>
               Minha trajetória na&nbsp;
-              <Link variant="blue" href="https://ciandt.com/">
+              <ExternalLink variant="blue" href="https://ciandt.com/">
                 CI&T
-              </Link>
-            </ExternalLink>
+              </ExternalLink>
+            </Heading>
             <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
               Durante 5 anos atuei como Engenheiro de Software na CI&T, onde
               pude aprender, evoluir e aperferçoar as minhas habilidades em

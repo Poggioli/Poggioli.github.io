@@ -11,6 +11,22 @@ import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTBradesco: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "Angular", href: "https://angular.io/" },
+    { label: "Node.js", href: "https://nodejs.org/" },
+    { label: "Express", href: "https://expressjs.com/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "Testing Library", href: "https://testing-library.com/" },
+    { label: "Microsserviços", href: "https://aws.amazon.com/microservices/" },
+    { label: "Micro Frontend", href: "https://micro-frontends.org/" },
+    { label: "TypeScript", href: "https://www.typescriptlang.org/" },
+    { label: "Java8", href: "https://www.java.com/" },
+    {
+      label: "Spring Integration",
+      href: "https://spring.io/projects/spring-integration",
+    },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -89,115 +105,18 @@ export const CIandTBradesco: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angular.io/"
-          target="_blank"
-        >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://nodejs.org/"
-          target="_blank"
-        >
-          Node.js
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://expressjs.com/"
-          target="_blank"
-        >
-          Express
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://testing-library.com/"
-          target="_blank"
-        >
-          Testing Library
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://aws.amazon.com/microservices/"
-          target="_blank"
-        >
-          Microsserviços
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://micro-frontends.org/"
-          target="_blank"
-        >
-          Micro Frontend
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-        >
-          TypeScript
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.java.com/"
-          target="_blank"
-        >
-          Java8
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://spring.io/projects/spring-integration"
-          target="_blank"
-        >
-          Spring Integration
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );
