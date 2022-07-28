@@ -8,14 +8,17 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 import { PageType, Pagination } from "../../../../components/common/Pagination";
-import { CIandTBradesco } from "./Bradesco/CIandTBradesco";
-import { CIandTGoogle } from "./Google/CIandTGoogle";
-import { CIandTItau } from "./Itau/CIandTItau";
+import { LoggiTriboProcessos } from "./TriboProcessos/LoggiTriboProcessos";
 
-export const CIandTExperience: FC = () => {
+export const LoggiExperience: FC = () => {
   const previousPage: PageType = {
-    href: "/#/experiences/loggi",
-    title: "Loggi",
+    href: "/#/experiences",
+    title: "Experiências",
+  };
+
+  const nextPage: PageType = {
+    href: "/#/experiences/ciandt",
+    title: "CI&T",
   };
 
   return (
@@ -56,53 +59,35 @@ export const CIandTExperience: FC = () => {
           >
             <img
               width="100%"
-              src="/ciandt-logo.svg"
-              alt="Logo da empresa CI&T"
+              src="/loggi-logo.svg"
+              alt="Logo da empresa Loggi"
             />
           </Box>
 
           <Box>
             <Heading as="h1" css={{ fontSize: "$7", mb: "$3" }}>
               Minha trajetória na&nbsp;
-              <Link variant="blue" href="https://ciandt.com/" target="_blank">
-                CI&T
+              <Link variant="blue" href="https://loggi.com/" target="_blank">
+                Loggi
               </Link>
             </Heading>
             <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
-              Durante 5 anos atuei como Engenheiro de Software na CI&T, onde
-              pude aprender, evoluir e aperferçoar as minhas habilidades em
-              Front-end, também fui capaz de transmitir meu conhecimento para
-              outras pessoas. Enquanto estive na CI&T atuei em três grandes
-              contratos como Engenheiro de Software, sendo eles:&nbsp;
-              <Link variant="blue" href="https://about.google/" target="_blank">
-                Google
-              </Link>
-              ,&nbsp;
+              Como Engenheiro de Software na Loggi atuo na tribo de bases, onde
+              nosso escopo é a melhoria de processos dentro dos&nbsp;
               <Link
-                variant="blue"
-                href="https://banco.bradesco/html/classic/sobre/index.shtm"
+                href="https://wikipedia.org/wiki/Crossdocking"
+                variant="contrast"
                 target="_blank"
               >
-                Banco Bradesco
+                Crossdocking's
               </Link>
-              &nbsp;e&nbsp;
-              <Link
-                variant="blue"
-                href="https://www.itau.com.br/"
-                target="_blank"
-              >
-                Banco Itaú
-              </Link>
-              .
+              &nbsp;e agências da Loggi.
             </Paragraph>
-
-            <CIandTGoogle />
-            <CIandTBradesco />
-            <CIandTItau />
+            <LoggiTriboProcessos />
           </Box>
         </Container>
       </Section>
-      <Pagination previous={previousPage} />
+      <Pagination previous={previousPage} next={nextPage} />
     </>
   );
 };

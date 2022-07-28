@@ -46,20 +46,12 @@ export const CardLoggi: FC = () => {
         }}
       >
         Como Engenheiro de Software Pleno na Loggi, atuo para a melhoria da
-        experiência dos operadores dos&nbsp;
-        <Link
-          href="https://wikipedia.org/wiki/Crossdocking"
-          variant="contrast"
-          target="_blank"
-        >
-          Crossdocking's
-        </Link>
-        &nbsp;criando novos processos, facilitando os processos atuais,
-        diminuindo a latência das API's e aumentando a capacidade de
-        processamento de cargas.
+        experiência dos operadores dos Crossdocking's criando novos processos,
+        facilitando os processos atuais, diminuindo a latência das API's e
+        aumentando a capacidade de processamento de cargas.
       </Text>
 
-      {/* <Text
+      <Text
         as="p"
         size="3"
         css={{ mt: "$5", lineHeight: "20px", ml: "auto", width: "fit-content" }}
@@ -67,7 +59,6 @@ export const CardLoggi: FC = () => {
         <Link
           href="/#/experiences/loggi"
           variant="blue"
-          target="_blank"
           css={{ display: "inline-flex", alignItems: "center" }}
         >
           Mais detalhes
@@ -75,7 +66,7 @@ export const CardLoggi: FC = () => {
             <ArrowRightIcon />
           </Flex>
         </Link>
-      </Text> */}
+      </Text>
     </Card>
   );
 };

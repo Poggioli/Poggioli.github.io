@@ -7,6 +7,7 @@ import { globalStyles } from "./globals/style";
 import { About } from "./pages/About";
 import { Experiences } from "./pages/Experiences";
 import { CIandTExperience } from "./pages/Experiences/work/CIandTExperience/CIandT";
+import { LoggiExperience } from "./pages/Experiences/work/LoggiExperience/LoggiExperience";
 import { Home } from "./pages/Home";
 
 const App: FC = () => {
@@ -25,6 +26,7 @@ const App: FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experiences" element={<Experiences />} />
+          <Route path="/experiences/loggi" element={<LoggiExperience />} />
           <Route path="/experiences/ciandt" element={<CIandTExperience />} />
         </Routes>
       </Box>

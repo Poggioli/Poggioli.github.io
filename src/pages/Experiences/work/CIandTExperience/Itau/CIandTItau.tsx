@@ -43,7 +43,7 @@ export const CIandTItau: FC = () => {
           02/2017 - 12/2019
         </Text>
       </Flex>
-      <Paragraph size="2" as="p">
+      <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
         No projeto do <strong>Banco Itaú</strong> atuei em diversos times, como
         o time da frente de investimentos, polenização digital e também no time
         de Open Banking.

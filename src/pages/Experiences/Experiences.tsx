@@ -10,8 +10,8 @@ export const Experiences: FC = () => {
   };
 
   const nextPage: PageType = {
-    href: "/#/experiences/ciandt",
-    title: "CI&T",
+    href: "/#/experiences/loggi",
+    title: "Loggi",
   };
 
   return (

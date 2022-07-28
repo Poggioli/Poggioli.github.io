@@ -9,7 +9,7 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 
-export const CIandTBradesco: FC = () => {
+export const LoggiTriboProcessos: FC = () => {
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -20,7 +20,7 @@ export const CIandTBradesco: FC = () => {
         }}
       >
         <Heading as="h2" css={{ fontSize: "$6", mb: "$1" }}>
-          Banco Bradesco
+          Dev Processos
         </Heading>
         <Text
           as="span"
@@ -40,43 +40,33 @@ export const CIandTBradesco: FC = () => {
             wordBreak: "keep-all",
           }}
         >
-          01/2020 - 12/2022
+          03/2022 - momento
         </Text>
       </Flex>
       <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
-        No projeto do <strong>Banco Bradesco</strong> atuei no time responsável
-        pelo redesenho da ferramenta principal das pessoas gerentes de
-        relacionamento, esta ferramenta é o
-        <strong>&nbsp;Planejamento Financeiro (PFIN)</strong>, também atuei
-        pontualmente no time que estava desenvolvendo a ferramenta interna
-        da&nbsp;
-        <Link
-          variant="blue"
-          href="https://www.agorainvestimentos.com.br/"
-          target="_blank"
-        >
-          Ágora Investimentos
+        No time de processos temos o objetivo de melhorar a parte operacional e
+        de processos da Loggi como um todo, sou responsável por três processos
+        do aplicativo interno que funciona dentro dos Crossdocking's e agências,
+        implemento novas funcionalidades, testes e experimentos dentro dos
+        escopos de Distribuir, Identificar e Receber pacotes.
+        <br />
+        <br />
+        Implemento testes unitários, realizo deploys constantes usando&nbsp;
+        <Link href="https://circleci.com/" variant="contrast" target="_blank">
+          CircleCI
         </Link>
-        &nbsp;e auxíliava na parte de desenvolvimento e cocriação dos
-        componentes do Design System.
-        <br />
-        <br />O <strong>PFIN</strong> tem como objetivo ser a ferramenta de uso
-        principal dos/das gerentes de relacionamento do
-        <strong>&nbsp;Banco Bradesco</strong>, nessa ferramenta o/a gerente
-        encontra as principais informações de seus clientes, o último
-        Planejamento Financeiro preenchido, suas tarefas gerenciais e pessoais e
-        os produtos ofertados pelo<strong>&nbsp;Banco Bradesco</strong>. Com
-        isso o/a gerente poderia oferecer um atendimento exclusivo para tal
-        cliente, gerando uma maior retenção de clientes e também maior consumo
-        de produtos do <strong>Banco Bradesco</strong>.
-        <br />
-        <br />
-        Minha principal atuação no projeto do <strong>PFIN</strong> era a
-        implementação de novas funcionalidades no front-end, definição de
-        padrões de componentes, correções de bugs, implementação de testes,
-        novas API's, auxílio a outras pessoas desenvolvedoras, implementação de
-        microsserviços e microFrontends, validações de POC's e auxílio ao líder
-        técnico em questões de Frontend e framework Angular.
+        , e monitorando os possíveis problemas no&nbsp;
+        <Link href="https://sentry.io/" variant="contrast" target="_blank">
+          Sentry.io
+        </Link>
+        . Converso com frequência com o time de Dados e o time de Design para
+        poder metrificar a qualidade da solução implementada e demonstrar o
+        impacto real que tal solução teve na operação. Analiso e presto suporte
+        para que os Crossdocking's tenham os melhores layouts possíveis para que
+        o operador possa realizar seu trabalho com a menor quantidade de passos
+        possíveis. Possibilitamos que agências possam fazer o processamento de
+        pacotes para Crossdocking's, assim há a possibilidade dos Crossdockings
+        aumentarem a sua capacidade de processamento.
       </Paragraph>
 
       <Flex
@@ -94,32 +84,10 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://angular.io/"
+          href="https://reactjs.org/"
           target="_blank"
         >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://nodejs.org/"
-          target="_blank"
-        >
-          Node.js
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://expressjs.com/"
-          target="_blank"
-        >
-          Express
+          ReactJs
         </Badge>
 
         <Badge
@@ -149,10 +117,10 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://aws.amazon.com/microservices/"
+          href="https://circleci.com/"
           target="_blank"
         >
-          Microsserviços
+          CircleCI
         </Badge>
 
         <Badge
@@ -160,10 +128,10 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://micro-frontends.org/"
+          href="https://sentry.io/"
           target="_blank"
         >
-          Micro Frontend
+          Sentry.io
         </Badge>
 
         <Badge
@@ -171,10 +139,10 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://www.typescriptlang.org/"
+          href="https://grafana.com/"
           target="_blank"
         >
-          TypeScript
+          Grafana
         </Badge>
 
         <Badge
@@ -182,10 +150,10 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://www.java.com/"
+          href="https://looker.com/"
           target="_blank"
         >
-          Java8
+          Looker
         </Badge>
 
         <Badge
@@ -193,10 +161,43 @@ export const CIandTBradesco: FC = () => {
           variant="blue"
           interactive
           as="a"
-          href="https://spring.io/projects/spring-integration"
+          href="https://www.python.org/"
           target="_blank"
         >
-          Spring Integration
+          Python3
+        </Badge>
+
+        <Badge
+          size="2"
+          variant="blue"
+          interactive
+          as="a"
+          href="https://www.djangoproject.com/"
+          target="_blank"
+        >
+          Django
+        </Badge>
+
+        <Badge
+          size="2"
+          variant="blue"
+          interactive
+          as="a"
+          href="https://www.django-rest-framework.org/"
+          target="_blank"
+        >
+          Django Rest Framework
+        </Badge>
+
+        <Badge
+          size="2"
+          variant="blue"
+          interactive
+          as="a"
+          href="https://www.postgresql.org/"
+          target="_blank"
+        >
+          PostgreSQL
         </Badge>
       </Flex>
     </Box>

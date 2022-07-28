@@ -43,7 +43,7 @@ export const CIandTGoogle: FC = () => {
           01/2022 - 03/2022
         </Text>
       </Flex>
-      <Paragraph size="2" as="p">
+      <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
         No projeto da Google atuei em um time que tomava conta de duas
         ferramentas internas, <strong>Wolven</strong> e&nbsp;
         <strong>Sumo</strong>.
