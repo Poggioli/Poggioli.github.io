@@ -8,6 +8,7 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTItau: FC = () => {
   return (
@@ -65,24 +66,15 @@ export const CIandTItau: FC = () => {
         <br />
         Dentro do time de <strong>Open Banking</strong>, atuava como um dos
         principais desenvolvedores Front-end, tinhamos o objetivo de colocar
-        dois portais de API's públicas do <strong>Banco Itaú</strong> e do&nbsp;
-        <strong>Iti</strong>, seu banco digital. O portal era&nbsp;
-        <Link
+        dois portais de&nbsp;
+        <ExternalLink
           variant="blue"
           href="https://developer.itau.com.br/baas/#/"
-          target="_blank"
         >
-          Itaú for developers_
-        </Link>
-        .
-        {/* &nbsp;e&nbsp;
-        <Link
-          variant="blue"
-          href="https://developer.itau.com.br/baas/#/"
-          target="_blank"
-        >
-          Itaú for developers_
-        </Link> */}
+          API's públicas
+        </ExternalLink>
+        &nbsp; do <strong>Banco Itaú</strong> e do&nbsp;
+        <strong>Iti</strong>, seu banco digital .
       </Paragraph>
 
       <Flex

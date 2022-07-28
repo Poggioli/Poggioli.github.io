@@ -1,5 +1,6 @@
-import { Box, Link, Paragraph, Text } from "@modulz/design-system";
+import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../common/ExternalLink";
 
 export const University: FC = () => {
   return (
@@ -29,52 +30,50 @@ export const University: FC = () => {
       <Box css={{ maxWidth: 685, mb: "$5" }}>
         <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
           Em 2014 ainda fazendo o curso técnico de informática, dei início na
-          minha jornada na <strong>UNICAMP</strong>, onde mais uma vez tive contato com pessoas
-          incríveis e professores fantásticos. A faculdade para mim foi uma
-          outra realidade, estudei com pessoas da minha idade e também com
-          pessoas mais velhas, tinha amigos com 18 anos e também amigos com 25
-          anos, vivi bons momentos, aprendi muito, quebrei muito a cara também.
+          minha jornada na <strong>UNICAMP</strong>, onde mais uma vez tive
+          contato com pessoas incríveis e professores fantásticos. A faculdade
+          para mim foi uma outra realidade, estudei com pessoas da minha idade e
+          também com pessoas mais velhas, tinha amigos com 18 anos e também
+          amigos com 25 anos, vivi bons momentos, aprendi muito, quebrei muito a
+          cara também.
           <br />
           <br />
           Desde que entrei na faculdade buscava um estágio, pois o meu campus
           não era em Barão Geraldo, Campinas, era em &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://pt.m.wikipedia.org/wiki/Limeira"
-            target="_blank"
           >
             Limeira - SP
-          </Link>
+          </ExternalLink>
           , uma cidade a alguns Km de Campinas, então eu precisava pagar o
           transporte para a &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.ft.unicamp.br"
-            target="_blank"
           >
             Faculdade de Tecnologia (FT) da UNICAMP
-          </Link>
+          </ExternalLink>
           , minha família foi muito importante para mim nesse momento, pois era
           muito cansativo fazer faculdade no período noturno e em outra cidade.
           <br />
           <br />
           Em 2017 consegui um estágio na&nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.ciandt.com"
-            target="_blank"
           >
             CI&T
-          </Link>
+          </ExternalLink>
           &nbsp; onde foi o começo da minha jornada profissional, apesar de não
           seguir a área acadêmica dentro da <strong>UNICAMP</strong>, percebi lá
           dentro mesmo que eu gostaria de alguma forma retornar para a sociedade
@@ -87,16 +86,15 @@ export const University: FC = () => {
           <br />
           Dentro da <strong>UNICAMP</strong> organizei palestras sobre inovação
           junto dos meus amigos de turma, realizei o &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://day.scratch.mit.edu"
-            target="_blank"
           >
             Scratch Day
-          </Link>
+          </ExternalLink>
           &nbsp; em 2018 e muitas outras ações.
         </Paragraph>
       </Box>

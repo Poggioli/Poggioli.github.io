@@ -8,6 +8,7 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const LoggiTriboProcessos: FC = () => {
   return (
@@ -52,13 +53,13 @@ export const LoggiTriboProcessos: FC = () => {
         <br />
         <br />
         Implemento testes unitários, realizo deploys constantes usando&nbsp;
-        <Link href="https://circleci.com/" variant="contrast" target="_blank">
+        <ExternalLink href="https://circleci.com/" variant="contrast">
           CircleCI
-        </Link>
+        </ExternalLink>
         , e monitorando os possíveis problemas no&nbsp;
-        <Link href="https://sentry.io/" variant="contrast" target="_blank">
+        <ExternalLink href="https://sentry.io/" variant="contrast">
           Sentry.io
-        </Link>
+        </ExternalLink>
         . Converso com frequência com o time de Dados e o time de Design para
         poder metrificar a qualidade da solução implementada e demonstrar o
         impacto real que tal solução teve na operação. Analiso e presto suporte

@@ -1,5 +1,6 @@
-import { Box, Link, Paragraph, Text } from "@modulz/design-system";
+import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../common/ExternalLink";
 
 export const Youth: FC = () => {
   return (
@@ -30,52 +31,48 @@ export const Youth: FC = () => {
         <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
           Próximo ao término do ensino fundamental, fiz a prova de três colégios
           técnicos públicos, &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.etecap.com.br"
-            target="_blank"
           >
             ETECAP
-          </Link>
+          </ExternalLink>
           , &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.cotuca.unicamp.br"
-            target="_blank"
           >
             COTUCA
-          </Link>
+          </ExternalLink>
           &nbsp; e &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.cotil.unicamp.br"
-            target="_blank"
           >
             COTIL
-          </Link>
+          </ExternalLink>
           , consegui passar em dois deles e decidi em <strong>2011</strong>
           &nbsp; fazer meu ensino médio na <strong>ETECAP</strong>
           &nbsp;, junto do ensino médio fiz também um curso de aprendizagem
           industrial na &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.campinas.sp.senai.br"
-            target="_blank"
           >
             Escola SENAI Roberto Mange
-          </Link>
+          </ExternalLink>
           &nbsp;foi a partir do meu ensino médio na ETECAP e no SENAI que eu
           comecei a ter contato com o ensino gratuíto de qualidade.
           <br />
@@ -89,16 +86,15 @@ export const Youth: FC = () => {
           Quando terminei o meu curso de aprendizagem industrial, eu já tinha
           certo anseio pela área da tecnologia, então dei início a um curso
           técnico em informática em 2013 na &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.campinaszerbini.sp.senai.br"
-            target="_blank"
           >
             Escola SENAI Prof. Dr. Euryclides de Jesus Zerbini
-          </Link>
+          </ExternalLink>
           &nbsp;. Um fato curioso é que eu não gostava de ficar com as tardes
           vagas, por isso sempre me ocupei com os cursos técnicos.
           <br />
@@ -106,16 +102,15 @@ export const Youth: FC = () => {
           Ao final do ensino médio fiz as provas do ENEM e da{" "}
           <strong>UNICAMP</strong>. No início de 2014 vi o resultado do
           vestibular da &nbsp;
-          <Link
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.unicamp.br"
-            target="_blank"
           >
             <strong>UNICAMP</strong>
-          </Link>
+          </ExternalLink>
           &nbsp; e descobri ali que eu iria estudar em uma das melhores
           faculdades da América Latina.
         </Paragraph>

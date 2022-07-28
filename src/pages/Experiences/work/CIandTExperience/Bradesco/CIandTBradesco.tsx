@@ -8,6 +8,7 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTBradesco: FC = () => {
   return (
@@ -50,13 +51,12 @@ export const CIandTBradesco: FC = () => {
         <strong>&nbsp;Planejamento Financeiro (PFIN)</strong>, também atuei
         pontualmente no time que estava desenvolvendo a ferramenta interna
         da&nbsp;
-        <Link
+        <ExternalLink
           variant="blue"
           href="https://www.agorainvestimentos.com.br/"
-          target="_blank"
         >
           Ágora Investimentos
-        </Link>
+        </ExternalLink>
         &nbsp;e auxíliava na parte de desenvolvimento e cocriação dos
         componentes do Design System.
         <br />

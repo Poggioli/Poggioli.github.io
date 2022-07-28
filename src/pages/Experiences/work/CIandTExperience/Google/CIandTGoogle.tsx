@@ -8,6 +8,7 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
 
 export const CIandTGoogle: FC = () => {
   return (
@@ -49,22 +50,14 @@ export const CIandTGoogle: FC = () => {
         <strong>Sumo</strong>.
         <br />
         <br />O <strong>Wolven</strong> é uma ferramenta como o&nbsp;
-        <Link
-          variant="blue"
-          href="https://about.google/intl/forms/"
-          target="_blank"
-        >
+        <ExternalLink variant="blue" href="https://about.google/intl/forms/">
           Google Forms
-        </Link>
+        </ExternalLink>
         , tendo a principal diferença perguntas dinâmicas, validações
         customizadas e conexão com o&nbsp;
-        <Link
-          variant="blue"
-          href="https://cloud.google.com/?hl=pt-br"
-          target="_blank"
-        >
+        <ExternalLink variant="blue" href="https://cloud.google.com/?hl=pt-br">
           Google Cloud
-        </Link>
+        </ExternalLink>
         , onde o usuário pode selecionar opções cadastradas para suas perguntas.
         O usuário também pode compartilhar uma seção de seu formulário com
         outras pessoas para que elas possam usá-la.

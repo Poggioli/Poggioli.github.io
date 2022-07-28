@@ -1,6 +1,7 @@
 import { Box, Grid, Flex, Text, Link } from "@modulz/design-system";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { FC } from "react";
+import ExternalLink from "../ExternalLink";
 
 export const Footer: FC = () => {
   return (
@@ -67,33 +68,31 @@ export const Footer: FC = () => {
           <ul>
             <li>
               <Text as="p" size="3" css={{ mt: "$3", lineHeight: "20px" }}>
-                <Link
+                <ExternalLink
                   href="https://github.com/Poggioli/"
                   variant="subtle"
-                  target="_blank"
                   css={{ display: "inline-flex", alignItems: "center" }}
                 >
                   Github
                   <Flex as="span" css={{ color: "$slate8" }}>
                     <ArrowTopRightIcon />
                   </Flex>
-                </Link>
+                </ExternalLink>
               </Text>
             </li>
 
             <li>
               <Text as="p" size="3" css={{ mt: "$3", lineHeight: "20px" }}>
-                <Link
+                <ExternalLink
                   href="https://www.linkedin.com/in/joaopogiolli/"
                   variant="subtle"
-                  target="_blank"
                   css={{ display: "inline-flex", alignItems: "center" }}
                 >
                   LinkedIn
                   <Flex as="span" css={{ color: "$slate8" }}>
                     <ArrowTopRightIcon />
                   </Flex>
-                </Link>
+                </ExternalLink>
               </Text>
             </li>
           </ul>
