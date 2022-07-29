@@ -1,5 +1,7 @@
-import { Box, Link, Paragraph, Text } from "@modulz/design-system";
+import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../common/ExternalLink";
+import { Space } from "../../common/Space";
 
 export const Childhood: FC = () => {
   return (
@@ -38,17 +40,16 @@ export const Childhood: FC = () => {
           game.
           <br />
           <br />
-          Estudei meu ensino fundamental inteiro na mesma escola, o&nbsp;
-          <Link
+          Estudei meu ensino fundamental inteiro na mesma escola, o<Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.sesisp.org.br"
-            target="_blank"
           >
             SESI
-          </Link>
+          </ExternalLink>
           , onde fiz muitos amigos que tenho e mantenho contato até hoje.
         </Paragraph>
       </Box>

@@ -8,8 +8,27 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const LoggiTriboProcessos: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "ReactJs", href: "https://reactjs.org/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "Testing Library", href: "https://testing-library.com/" },
+    { label: "CircleCI", href: "https://circleci.com/" },
+    { label: "Sentry.io", href: "https://sentry.io/" },
+    { label: "Grafana", href: "https://grafana.com/" },
+    { label: "Looker", href: "https://looker.com/" },
+    { label: "Python3", href: "https://www.python.org/" },
+    { label: "Django", href: "https://www.djangoproject.com/" },
+    {
+      label: "Django Rest Framework",
+      href: "https://www.django-rest-framework.org/",
+    },
+    { label: "PostgreSQL", href: "https://www.postgresql.org/" },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -51,14 +70,16 @@ export const LoggiTriboProcessos: FC = () => {
         escopos de Distribuir, Identificar e Receber pacotes.
         <br />
         <br />
-        Implemento testes unitários, realizo deploys constantes usando&nbsp;
-        <Link href="https://circleci.com/" variant="contrast" target="_blank">
+        Implemento testes unitários, realizo deploys constantes usando
+        <Space />
+        <ExternalLink href="https://circleci.com/" variant="contrast">
           CircleCI
-        </Link>
-        , e monitorando os possíveis problemas no&nbsp;
-        <Link href="https://sentry.io/" variant="contrast" target="_blank">
+        </ExternalLink>
+        , e monitorando os possíveis problemas no
+        <Space />
+        <ExternalLink href="https://sentry.io/" variant="contrast">
           Sentry.io
-        </Link>
+        </ExternalLink>
         . Converso com frequência com o time de Dados e o time de Design para
         poder metrificar a qualidade da solução implementada e demonstrar o
         impacto real que tal solução teve na operação. Analiso e presto suporte
@@ -79,126 +100,18 @@ export const LoggiTriboProcessos: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://reactjs.org/"
-          target="_blank"
-        >
-          ReactJs
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://testing-library.com/"
-          target="_blank"
-        >
-          Testing Library
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://circleci.com/"
-          target="_blank"
-        >
-          CircleCI
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://sentry.io/"
-          target="_blank"
-        >
-          Sentry.io
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://grafana.com/"
-          target="_blank"
-        >
-          Grafana
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://looker.com/"
-          target="_blank"
-        >
-          Looker
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.python.org/"
-          target="_blank"
-        >
-          Python3
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.djangoproject.com/"
-          target="_blank"
-        >
-          Django
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.django-rest-framework.org/"
-          target="_blank"
-        >
-          Django Rest Framework
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.postgresql.org/"
-          target="_blank"
-        >
-          PostgreSQL
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );

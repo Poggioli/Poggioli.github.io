@@ -8,8 +8,26 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const CIandTBradesco: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "Angular", href: "https://angular.io/" },
+    { label: "Node.js", href: "https://nodejs.org/" },
+    { label: "Express", href: "https://expressjs.com/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "Testing Library", href: "https://testing-library.com/" },
+    { label: "Microsserviços", href: "https://aws.amazon.com/microservices/" },
+    { label: "Micro Frontend", href: "https://micro-frontends.org/" },
+    { label: "TypeScript", href: "https://www.typescriptlang.org/" },
+    { label: "Java8", href: "https://www.java.com/" },
+    {
+      label: "Spring Integration",
+      href: "https://spring.io/projects/spring-integration",
+    },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -47,28 +65,38 @@ export const CIandTBradesco: FC = () => {
         No projeto do <strong>Banco Bradesco</strong> atuei no time responsável
         pelo redesenho da ferramenta principal das pessoas gerentes de
         relacionamento, esta ferramenta é o
-        <strong>&nbsp;Planejamento Financeiro (PFIN)</strong>, também atuei
-        pontualmente no time que estava desenvolvendo a ferramenta interna
-        da&nbsp;
-        <Link
+        <strong>
+          <Space />
+          Planejamento Financeiro (PFIN)
+        </strong>
+        , também atuei pontualmente no time que estava desenvolvendo a
+        ferramenta interna da
+        <Space />
+        <ExternalLink
           variant="blue"
           href="https://www.agorainvestimentos.com.br/"
-          target="_blank"
         >
           Ágora Investimentos
-        </Link>
-        &nbsp;e auxíliava na parte de desenvolvimento e cocriação dos
+        </ExternalLink>
+        <Space />e auxíliava na parte de desenvolvimento e cocriação dos
         componentes do Design System.
         <br />
         <br />O <strong>PFIN</strong> tem como objetivo ser a ferramenta de uso
         principal dos/das gerentes de relacionamento do
-        <strong>&nbsp;Banco Bradesco</strong>, nessa ferramenta o/a gerente
-        encontra as principais informações de seus clientes, o último
-        Planejamento Financeiro preenchido, suas tarefas gerenciais e pessoais e
-        os produtos ofertados pelo<strong>&nbsp;Banco Bradesco</strong>. Com
-        isso o/a gerente poderia oferecer um atendimento exclusivo para tal
-        cliente, gerando uma maior retenção de clientes e também maior consumo
-        de produtos do <strong>Banco Bradesco</strong>.
+        <strong>
+          <Space />
+          Banco Bradesco
+        </strong>
+        , nessa ferramenta o/a gerente encontra as principais informações de
+        seus clientes, o último Planejamento Financeiro preenchido, suas tarefas
+        gerenciais e pessoais e os produtos ofertados pelo
+        <strong>
+          <Space />
+          Banco Bradesco
+        </strong>
+        . Com isso o/a gerente poderia oferecer um atendimento exclusivo para
+        tal cliente, gerando uma maior retenção de clientes e também maior
+        consumo de produtos do <strong>Banco Bradesco</strong>.
         <br />
         <br />
         Minha principal atuação no projeto do <strong>PFIN</strong> era a
@@ -89,115 +117,18 @@ export const CIandTBradesco: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angular.io/"
-          target="_blank"
-        >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://nodejs.org/"
-          target="_blank"
-        >
-          Node.js
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://expressjs.com/"
-          target="_blank"
-        >
-          Express
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://testing-library.com/"
-          target="_blank"
-        >
-          Testing Library
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://aws.amazon.com/microservices/"
-          target="_blank"
-        >
-          Microsserviços
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://micro-frontends.org/"
-          target="_blank"
-        >
-          Micro Frontend
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-        >
-          TypeScript
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.java.com/"
-          target="_blank"
-        >
-          Java8
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://spring.io/projects/spring-integration"
-          target="_blank"
-        >
-          Spring Integration
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );

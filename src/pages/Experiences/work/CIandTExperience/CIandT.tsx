@@ -7,7 +7,9 @@ import {
   Section,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../components/common/ExternalLink";
 import { PageType, Pagination } from "../../../../components/common/Pagination";
+import { Space } from "../../../../components/common/Space";
 import { CIandTBradesco } from "./Bradesco/CIandTBradesco";
 import { CIandTGoogle } from "./Google/CIandTGoogle";
 import { CIandTItau } from "./Itau/CIandTItau";
@@ -63,36 +65,33 @@ export const CIandTExperience: FC = () => {
 
           <Box>
             <Heading as="h1" css={{ fontSize: "$7", mb: "$3" }}>
-              Minha trajetória na&nbsp;
-              <Link variant="blue" href="https://ciandt.com/" target="_blank">
+              Minha trajetória na
+              <Space />
+              <ExternalLink variant="blue" href="https://ciandt.com/">
                 CI&T
-              </Link>
+              </ExternalLink>
             </Heading>
             <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
               Durante 5 anos atuei como Engenheiro de Software na CI&T, onde
               pude aprender, evoluir e aperferçoar as minhas habilidades em
               Front-end, também fui capaz de transmitir meu conhecimento para
               outras pessoas. Enquanto estive na CI&T atuei em três grandes
-              contratos como Engenheiro de Software, sendo eles:&nbsp;
-              <Link variant="blue" href="https://about.google/" target="_blank">
+              contratos como Engenheiro de Software, sendo eles:
+              <Space />
+              <ExternalLink variant="blue" href="https://about.google/">
                 Google
-              </Link>
-              ,&nbsp;
-              <Link
+              </ExternalLink>
+              ,<Space />
+              <ExternalLink
                 variant="blue"
                 href="https://banco.bradesco/html/classic/sobre/index.shtm"
-                target="_blank"
               >
                 Banco Bradesco
-              </Link>
-              &nbsp;e&nbsp;
-              <Link
-                variant="blue"
-                href="https://www.itau.com.br/"
-                target="_blank"
-              >
+              </ExternalLink>
+              <Space />e<Space />
+              <ExternalLink variant="blue" href="https://www.itau.com.br/">
                 Banco Itaú
-              </Link>
+              </ExternalLink>
               .
             </Paragraph>
 

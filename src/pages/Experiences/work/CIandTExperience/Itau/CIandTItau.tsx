@@ -8,8 +8,18 @@ import {
   Badge,
 } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const CIandTItau: FC = () => {
+  const techs: { label: string; href: string }[] = [
+    { label: "Joomla", href: "https://www.joomla.org/" },
+    { label: "Angular", href: "https://angular.io/" },
+    { label: "JEST", href: "https://jestjs.io/" },
+    { label: "TypeScript", href: "https://www.typescriptlang.org/" },
+    { label: "Java", href: "https://www.java.com/" },
+  ];
+
   return (
     <Box css={{ mt: "$9" }}>
       <Flex
@@ -52,37 +62,28 @@ export const CIandTItau: FC = () => {
         No time da <strong>frente de investimentos</strong>, atuava como
         Engenheiro de Software Junior com o principal foco no desenvolvimento da
         nova jornada de investimento dentro do aplicativo do
-        <strong>&nbsp;Banco Itaú&nbsp;</strong>tinha como objetivo a
+        <strong><Space />Banco Itaú<Space /></strong>tinha como objetivo a
         implementação de uma nova jornada de investimentos para que houvesse um
         maior interesse e captação dos clientes em investir dentro do
-        <strong>&nbsp;Banco Itaú</strong>.
+        <strong><Space />Banco Itaú</strong>.
         <br />
         <br />
         No time de <strong>polenização digital</strong>, atuavamos dentro de
-        times de desenvolvimento do <strong>&nbsp;Banco Itaú</strong>, tendo em
+        times de desenvolvimento do <strong><Space />Banco Itaú</strong>, tendo em
         vista a passagem de conhecimento de processos ágeis.
         <br />
         <br />
         Dentro do time de <strong>Open Banking</strong>, atuava como um dos
         principais desenvolvedores Front-end, tinhamos o objetivo de colocar
-        dois portais de API's públicas do <strong>Banco Itaú</strong> e do&nbsp;
-        <strong>Iti</strong>, seu banco digital. O portal era&nbsp;
-        <Link
+        dois portais de<Space />
+        <ExternalLink
           variant="blue"
           href="https://developer.itau.com.br/baas/#/"
-          target="_blank"
         >
-          Itaú for developers_
-        </Link>
-        .
-        {/* &nbsp;e&nbsp;
-        <Link
-          variant="blue"
-          href="https://developer.itau.com.br/baas/#/"
-          target="_blank"
-        >
-          Itaú for developers_
-        </Link> */}
+          API's públicas
+        </ExternalLink>
+        <Space /> do <strong>Banco Itaú</strong> e do<Space />
+        <strong>Iti</strong>, seu banco digital .
       </Paragraph>
 
       <Flex
@@ -95,60 +96,18 @@ export const CIandTItau: FC = () => {
           },
         }}
       >
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.joomla.org/"
-          target="_blank"
-        >
-          Joomla
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://angular.io/"
-          target="_blank"
-        >
-          Angular
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://jestjs.io/"
-          target="_blank"
-        >
-          JEST
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-        >
-          TypeScript
-        </Badge>
-
-        <Badge
-          size="2"
-          variant="blue"
-          interactive
-          as="a"
-          href="https://www.java.com/"
-          target="_blank"
-        >
-          Java
-        </Badge>
+        {techs.map((tech: { label: string; href: string }) => (
+          <Badge
+            size="2"
+            variant="blue"
+            interactive
+            as="a"
+            href={tech.href}
+            target="_blank"
+          >
+            {tech.label}
+          </Badge>
+        ))}
       </Flex>
     </Box>
   );

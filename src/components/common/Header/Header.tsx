@@ -2,6 +2,7 @@ import { Box, Container, Flex, Link, Text } from "@modulz/design-system";
 import { FC } from "react";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { AccessibleIconContainer } from "../AccessibleIconContainer";
+import ExternalLink from "../ExternalLink";
 
 export const Header: FC = () => {
   return (
@@ -38,24 +39,22 @@ export const Header: FC = () => {
               <Text>Experiências</Text>
             </Link>
 
-            <Link
-              target="_blank"
+            <ExternalLink
               href="https://www.linkedin.com/in/joaopogiolli/"
               title="Link para o Linkedin de João Pogiolli"
             >
               <AccessibleIconContainer label="Link para o Linkedin de João Pogiolli">
                 <LinkedInLogoIcon width={24} height={24} />
               </AccessibleIconContainer>
-            </Link>
-            <Link
-              target="_blank"
+            </ExternalLink>
+            <ExternalLink
               href="https://github.com/Poggioli/"
               title="Link para o Github de João Pogiolli"
             >
               <AccessibleIconContainer label="Link para o Github de João Pogiolli">
                 <GitHubLogoIcon width={24} height={24} />
               </AccessibleIconContainer>
-            </Link>
+            </ExternalLink>
           </Flex>
         </Flex>
       </Container>

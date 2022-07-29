@@ -1,5 +1,7 @@
-import { Box, Link, Paragraph, Text } from "@modulz/design-system";
+import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
+import ExternalLink from "../../common/ExternalLink";
+import { Space } from "../../common/Space";
 
 export const Youth: FC = () => {
   return (
@@ -29,55 +31,52 @@ export const Youth: FC = () => {
       <Box css={{ maxWidth: 685, mb: "$5" }}>
         <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
           Próximo ao término do ensino fundamental, fiz a prova de três colégios
-          técnicos públicos, &nbsp;
-          <Link
+          técnicos públicos, <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.etecap.com.br"
-            target="_blank"
           >
             ETECAP
-          </Link>
-          , &nbsp;
-          <Link
+          </ExternalLink>
+          , <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.cotuca.unicamp.br"
-            target="_blank"
           >
             COTUCA
-          </Link>
-          &nbsp; e &nbsp;
-          <Link
+          </ExternalLink>
+          <Space /> e <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.cotil.unicamp.br"
-            target="_blank"
           >
             COTIL
-          </Link>
+          </ExternalLink>
           , consegui passar em dois deles e decidi em <strong>2011</strong>
-          &nbsp; fazer meu ensino médio na <strong>ETECAP</strong>
-          &nbsp;, junto do ensino médio fiz também um curso de aprendizagem
-          industrial na &nbsp;
-          <Link
+          <Space /> fazer meu ensino médio na <strong>ETECAP</strong>
+          <Space />, junto do ensino médio fiz também um curso de aprendizagem
+          industrial na <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.campinas.sp.senai.br"
-            target="_blank"
           >
             Escola SENAI Roberto Mange
-          </Link>
-          &nbsp;foi a partir do meu ensino médio na ETECAP e no SENAI que eu
-          comecei a ter contato com o ensino gratuíto de qualidade.
+          </ExternalLink>
+          <Space />
+          foi a partir do meu ensino médio na ETECAP e no SENAI que eu comecei a
+          ter contato com o ensino gratuíto de qualidade.
           <br />
           <br />
           No meu ensino médio pude ter contato com muitas pessoas e todas
@@ -88,35 +87,33 @@ export const Youth: FC = () => {
           <br />
           Quando terminei o meu curso de aprendizagem industrial, eu já tinha
           certo anseio pela área da tecnologia, então dei início a um curso
-          técnico em informática em 2013 na &nbsp;
-          <Link
+          técnico em informática em 2013 na <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.campinaszerbini.sp.senai.br"
-            target="_blank"
           >
             Escola SENAI Prof. Dr. Euryclides de Jesus Zerbini
-          </Link>
-          &nbsp;. Um fato curioso é que eu não gostava de ficar com as tardes
+          </ExternalLink>
+          <Space />. Um fato curioso é que eu não gostava de ficar com as tardes
           vagas, por isso sempre me ocupei com os cursos técnicos.
           <br />
           <br />
           Ao final do ensino médio fiz as provas do ENEM e da{" "}
           <strong>UNICAMP</strong>. No início de 2014 vi o resultado do
-          vestibular da &nbsp;
-          <Link
+          vestibular da <Space />
+          <ExternalLink
             css={{
               color: "$blueA10",
             }}
             variant="subtle"
             href="https://www.unicamp.br"
-            target="_blank"
           >
             <strong>UNICAMP</strong>
-          </Link>
-          &nbsp; e descobri ali que eu iria estudar em uma das melhores
+          </ExternalLink>
+          <Space /> e descobri ali que eu iria estudar em uma das melhores
           faculdades da América Latina.
         </Paragraph>
       </Box>
