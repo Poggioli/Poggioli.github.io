@@ -2,6 +2,7 @@ import { Box, Grid, Flex, Text, Link } from "@modulz/design-system";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { FC } from "react";
 import ExternalLink from "../ExternalLink";
+import { Space } from "../Space";
 
 export const Footer: FC = () => {
   return (
@@ -29,7 +30,6 @@ export const Footer: FC = () => {
               lineHeight: "20px",
               color: "$gray10",
               pr: "$8",
-              mx: "auto",
               my: "auto",
             }}
           >
@@ -98,6 +98,45 @@ export const Footer: FC = () => {
           </ul>
         </Box>
       </Grid>
+      <Flex justify="center" css={{ mt: "$9", textAlign: "center" }}>
+        <Text
+          as="p"
+          size="3"
+          css={{
+            mt: "$3",
+            lineHeight: "20px",
+            color: "$slate11",
+            maxWidth: "300px",
+          }}
+        >
+          Feito com
+          <Space />
+          <ExternalLink href="https://reactjs.org/" variant="contrast">
+            React
+          </ExternalLink>
+          ,<Space />
+          <ExternalLink href="https://www.radix-ui.com/" variant="contrast">
+            Radix-ui
+          </ExternalLink>
+          ,<Space />
+          <ExternalLink href="https://stitches.dev/" variant="contrast">
+            Stitches
+          </ExternalLink>
+          ,<Space />
+          <ExternalLink href="https://vitejs.dev/" variant="contrast">
+            Vite
+          </ExternalLink>
+          ,<Space />
+          <ExternalLink
+            href="https://docs.github.com/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+            variant="contrast"
+          >
+            GitHub pages
+          </ExternalLink>
+          <Space />e<Space />
+          <strong>amor ♥</strong>
+        </Text>
+      </Flex>
     </Box>
   );
 };

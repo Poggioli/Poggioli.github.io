@@ -9,6 +9,7 @@ import {
 import { FC } from "react";
 import ExternalLink from "../../../../components/common/ExternalLink";
 import { PageType, Pagination } from "../../../../components/common/Pagination";
+import { Space } from "../../../../components/common/Space";
 import { LoggiTriboProcessos } from "./TriboProcessos/LoggiTriboProcessos";
 
 export const LoggiExperience: FC = () => {
@@ -67,21 +68,21 @@ export const LoggiExperience: FC = () => {
 
           <Box>
             <Heading as="h1" css={{ fontSize: "$7", mb: "$3" }}>
-              Minha trajetória na&nbsp;
+              Minha trajetória na<Space />
               <ExternalLink variant="blue" href="https://loggi.com/">
                 Loggi
               </ExternalLink>
             </Heading>
             <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
               Como Engenheiro de Software na Loggi atuo na tribo de bases, onde
-              nosso escopo é a melhoria de processos dentro dos&nbsp;
+              nosso escopo é a melhoria de processos dentro dos<Space />
               <ExternalLink
                 href="https://wikipedia.org/wiki/Crossdocking"
                 variant="contrast"
               >
                 Crossdocking's
               </ExternalLink>
-              &nbsp;e agências da Loggi.
+              <Space />e agências da Loggi.
             </Paragraph>
             <LoggiTriboProcessos />
           </Box>

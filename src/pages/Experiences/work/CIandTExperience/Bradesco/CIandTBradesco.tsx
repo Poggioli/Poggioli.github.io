@@ -9,6 +9,7 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const CIandTBradesco: FC = () => {
   const techs: { label: string; href: string }[] = [
@@ -64,27 +65,38 @@ export const CIandTBradesco: FC = () => {
         No projeto do <strong>Banco Bradesco</strong> atuei no time responsável
         pelo redesenho da ferramenta principal das pessoas gerentes de
         relacionamento, esta ferramenta é o
-        <strong>&nbsp;Planejamento Financeiro (PFIN)</strong>, também atuei
-        pontualmente no time que estava desenvolvendo a ferramenta interna
-        da&nbsp;
+        <strong>
+          <Space />
+          Planejamento Financeiro (PFIN)
+        </strong>
+        , também atuei pontualmente no time que estava desenvolvendo a
+        ferramenta interna da
+        <Space />
         <ExternalLink
           variant="blue"
           href="https://www.agorainvestimentos.com.br/"
         >
           Ágora Investimentos
         </ExternalLink>
-        &nbsp;e auxíliava na parte de desenvolvimento e cocriação dos
+        <Space />e auxíliava na parte de desenvolvimento e cocriação dos
         componentes do Design System.
         <br />
         <br />O <strong>PFIN</strong> tem como objetivo ser a ferramenta de uso
         principal dos/das gerentes de relacionamento do
-        <strong>&nbsp;Banco Bradesco</strong>, nessa ferramenta o/a gerente
-        encontra as principais informações de seus clientes, o último
-        Planejamento Financeiro preenchido, suas tarefas gerenciais e pessoais e
-        os produtos ofertados pelo<strong>&nbsp;Banco Bradesco</strong>. Com
-        isso o/a gerente poderia oferecer um atendimento exclusivo para tal
-        cliente, gerando uma maior retenção de clientes e também maior consumo
-        de produtos do <strong>Banco Bradesco</strong>.
+        <strong>
+          <Space />
+          Banco Bradesco
+        </strong>
+        , nessa ferramenta o/a gerente encontra as principais informações de
+        seus clientes, o último Planejamento Financeiro preenchido, suas tarefas
+        gerenciais e pessoais e os produtos ofertados pelo
+        <strong>
+          <Space />
+          Banco Bradesco
+        </strong>
+        . Com isso o/a gerente poderia oferecer um atendimento exclusivo para
+        tal cliente, gerando uma maior retenção de clientes e também maior
+        consumo de produtos do <strong>Banco Bradesco</strong>.
         <br />
         <br />
         Minha principal atuação no projeto do <strong>PFIN</strong> era a

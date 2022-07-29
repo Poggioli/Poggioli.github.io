@@ -9,6 +9,7 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const CIandTGoogle: FC = () => {
   const techs: { label: string; href: string }[] = [
@@ -56,15 +57,15 @@ export const CIandTGoogle: FC = () => {
       </Flex>
       <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
         No projeto da Google atuei em um time que tomava conta de duas
-        ferramentas internas, <strong>Wolven</strong> e&nbsp;
+        ferramentas internas, <strong>Wolven</strong> e<Space />
         <strong>Sumo</strong>.
         <br />
-        <br />O <strong>Wolven</strong> é uma ferramenta como o&nbsp;
+        <br />O <strong>Wolven</strong> é uma ferramenta como o<Space />
         <ExternalLink variant="blue" href="https://about.google/intl/forms/">
           Google Forms
         </ExternalLink>
         , tendo a principal diferença perguntas dinâmicas, validações
-        customizadas e conexão com o&nbsp;
+        customizadas e conexão com o<Space />
         <ExternalLink variant="blue" href="https://cloud.google.com/?hl=pt-br">
           Google Cloud
         </ExternalLink>
@@ -75,7 +76,7 @@ export const CIandTGoogle: FC = () => {
         <br />O <strong>Sumo</strong> é uma ferramenta para controle de gastos,
         onde os gestores de áreas internas da Google poderiam "contratar" outras
         áreas da própria Google e por meio do
-        <strong>&nbsp;Sumo&nbsp;</strong>
+        <strong><Space />Sumo<Space /></strong>
         realizar a transferência de pagamentos.
       </Paragraph>
 

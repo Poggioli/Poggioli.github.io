@@ -1,6 +1,7 @@
 import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../common/ExternalLink";
+import { Space } from "../../common/Space";
 
 export const University: FC = () => {
   return (
@@ -39,7 +40,7 @@ export const University: FC = () => {
           <br />
           <br />
           Desde que entrei na faculdade buscava um estágio, pois o meu campus
-          não era em Barão Geraldo, Campinas, era em &nbsp;
+          não era em Barão Geraldo, Campinas, era em <Space />
           <ExternalLink
             css={{
               color: "$blueA10",
@@ -50,7 +51,7 @@ export const University: FC = () => {
             Limeira - SP
           </ExternalLink>
           , uma cidade a alguns Km de Campinas, então eu precisava pagar o
-          transporte para a &nbsp;
+          transporte para a <Space />
           <ExternalLink
             css={{
               color: "$blueA10",
@@ -64,7 +65,7 @@ export const University: FC = () => {
           muito cansativo fazer faculdade no período noturno e em outra cidade.
           <br />
           <br />
-          Em 2017 consegui um estágio na&nbsp;
+          Em 2017 consegui um estágio na<Space />
           <ExternalLink
             css={{
               color: "$blueA10",
@@ -74,7 +75,7 @@ export const University: FC = () => {
           >
             CI&T
           </ExternalLink>
-          &nbsp; onde foi o começo da minha jornada profissional, apesar de não
+          <Space /> onde foi o começo da minha jornada profissional, apesar de não
           seguir a área acadêmica dentro da <strong>UNICAMP</strong>, percebi lá
           dentro mesmo que eu gostaria de alguma forma retornar para a sociedade
           todo o privilégio que tive de estudar em uma escola técnica de
@@ -85,7 +86,7 @@ export const University: FC = () => {
           <br />
           <br />
           Dentro da <strong>UNICAMP</strong> organizei palestras sobre inovação
-          junto dos meus amigos de turma, realizei o &nbsp;
+          junto dos meus amigos de turma, realizei o <Space />
           <ExternalLink
             css={{
               color: "$blueA10",
@@ -95,7 +96,7 @@ export const University: FC = () => {
           >
             Scratch Day
           </ExternalLink>
-          &nbsp; em 2018 e muitas outras ações.
+          <Space /> em 2018 e muitas outras ações.
         </Paragraph>
       </Box>
     </>

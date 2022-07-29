@@ -9,6 +9,7 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const CIandTItau: FC = () => {
   const techs: { label: string; href: string }[] = [
@@ -61,27 +62,27 @@ export const CIandTItau: FC = () => {
         No time da <strong>frente de investimentos</strong>, atuava como
         Engenheiro de Software Junior com o principal foco no desenvolvimento da
         nova jornada de investimento dentro do aplicativo do
-        <strong>&nbsp;Banco Itaú&nbsp;</strong>tinha como objetivo a
+        <strong><Space />Banco Itaú<Space /></strong>tinha como objetivo a
         implementação de uma nova jornada de investimentos para que houvesse um
         maior interesse e captação dos clientes em investir dentro do
-        <strong>&nbsp;Banco Itaú</strong>.
+        <strong><Space />Banco Itaú</strong>.
         <br />
         <br />
         No time de <strong>polenização digital</strong>, atuavamos dentro de
-        times de desenvolvimento do <strong>&nbsp;Banco Itaú</strong>, tendo em
+        times de desenvolvimento do <strong><Space />Banco Itaú</strong>, tendo em
         vista a passagem de conhecimento de processos ágeis.
         <br />
         <br />
         Dentro do time de <strong>Open Banking</strong>, atuava como um dos
         principais desenvolvedores Front-end, tinhamos o objetivo de colocar
-        dois portais de&nbsp;
+        dois portais de<Space />
         <ExternalLink
           variant="blue"
           href="https://developer.itau.com.br/baas/#/"
         >
           API's públicas
         </ExternalLink>
-        &nbsp; do <strong>Banco Itaú</strong> e do&nbsp;
+        <Space /> do <strong>Banco Itaú</strong> e do<Space />
         <strong>Iti</strong>, seu banco digital .
       </Paragraph>
 

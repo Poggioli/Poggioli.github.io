@@ -1,6 +1,7 @@
 import { Box, Paragraph, Text } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../common/ExternalLink";
+import { Space } from "../../common/Space";
 
 export const Childhood: FC = () => {
   return (
@@ -39,7 +40,7 @@ export const Childhood: FC = () => {
           game.
           <br />
           <br />
-          Estudei meu ensino fundamental inteiro na mesma escola, o&nbsp;
+          Estudei meu ensino fundamental inteiro na mesma escola, o<Space />
           <ExternalLink
             css={{
               color: "$blueA10",

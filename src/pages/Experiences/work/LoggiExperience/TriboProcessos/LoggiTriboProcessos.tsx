@@ -9,6 +9,7 @@ import {
 } from "@modulz/design-system";
 import { FC } from "react";
 import ExternalLink from "../../../../../components/common/ExternalLink";
+import { Space } from "../../../../../components/common/Space";
 
 export const LoggiTriboProcessos: FC = () => {
   const techs: { label: string; href: string }[] = [
@@ -69,11 +70,13 @@ export const LoggiTriboProcessos: FC = () => {
         escopos de Distribuir, Identificar e Receber pacotes.
         <br />
         <br />
-        Implemento testes unitários, realizo deploys constantes usando&nbsp;
+        Implemento testes unitários, realizo deploys constantes usando
+        <Space />
         <ExternalLink href="https://circleci.com/" variant="contrast">
           CircleCI
         </ExternalLink>
-        , e monitorando os possíveis problemas no&nbsp;
+        , e monitorando os possíveis problemas no
+        <Space />
         <ExternalLink href="https://sentry.io/" variant="contrast">
           Sentry.io
         </ExternalLink>
