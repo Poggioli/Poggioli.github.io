@@ -1,0 +1,12 @@
+{
+  "common": {
+    "main_hero": {
+      "h1": {
+        "name": "João Pogiolli",
+        "stack": "Front - End",
+        "position": "Developer"
+      },
+      "paragraph": "Passionate about Front-End development, problem solving, UI/UX, my family, girlfriend, friends and birds"
+    }
+  }
+}

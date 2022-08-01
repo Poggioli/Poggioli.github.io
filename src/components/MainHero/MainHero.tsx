@@ -7,8 +7,11 @@ import {
   Text,
 } from "@modulz/design-system";
 import type { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 export const MainHero: FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Section
       css={{
@@ -51,16 +54,15 @@ export const MainHero: FC = () => {
                 },
               }}
             >
-              João Pogiolli
+              {t("main_hero.h1.name")}
               <br />
-              Front - End
+              {t("main_hero.h1.stack")}
               <br />
-              Developer
+              {t("main_hero.h1.position")}
             </Text>
             <Box css={{ maxWidth: 500, mb: "$5" }}>
               <Paragraph size="2" as="p">
-                Apaixonado por desenvolvimento Front-End, resolução de
-                problemas, UI/UX, minha família, namorada, amigos e pássaros.
+                {t("main_hero.paragraph")}
               </Paragraph>
             </Box>
           </Box>
