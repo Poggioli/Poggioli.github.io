@@ -59,7 +59,7 @@ export const LoggiTriboProcessos: FC = () => {
             wordBreak: "keep-all",
           }}
         >
-          03/2022 - momento
+          03/2022 - 08/2022
         </Text>
       </Flex>
       <Paragraph size="2" as="p" css={{ textAlign: "justify" }}>
