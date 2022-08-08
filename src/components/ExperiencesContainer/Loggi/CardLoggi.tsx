@@ -33,7 +33,7 @@ export const CardLoggi: FC = () => {
         size={{ "@initial": 2, "@bp1": 3 }}
         css={{ mt: "$1", fontWeight: "300" }}
       >
-        03/2022 - momento
+        03/2022 - 08/2022
       </Text>
 
       <Text
